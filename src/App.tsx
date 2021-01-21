@@ -1,24 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+} from "react-router-dom";
+import Home from './Pages/Home'
 
-function App() {
+const App:React.FC=()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <nav className="navbar navbar-default">
+          <div className="container-fluid">
+            <div className="navbar-header">
+            <Link className="navbar-brand" to="/">Home</Link>
+            </div>
+            <ul className="nav navbar-nav">
+              <li className="active"><a href="#">Home</a></li>
+              <li><Link to="/keith">Education</Link></li>
+              <li className="dropdown">
+                <a className="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+                </a>
+                <ul className="dropdown-menu">
+                  <li><Link to="/keith">Education</Link></li>
+                  <li><Link to="/keith">Education</Link></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <Switch>
+        <Route path="/keith">
+                    <Home/>
+                </Route>
+        </Switch>
+      </Router>
+
+        
+      <div className="container">
+        <h3>Basic Navbar Example</h3>
+        <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+      </div>
     </div>
   );
 }
