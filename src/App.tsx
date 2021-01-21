@@ -5,7 +5,8 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import Home from './Pages/Home'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
 
 const App:React.FC=()=> {
   return (
@@ -20,28 +21,28 @@ const App:React.FC=()=> {
               <li className="active"><a href="#">Home</a></li>
               <li><Link to="/keith">Education</Link></li>
               <li className="dropdown">
-                <a className="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+                <a className="dropdown-toggle" data-toggle="dropdown" href="#">Projects
                 </a>
                 <ul className="dropdown-menu">
-                  <li><Link to="/keith">Education</Link></li>
-                  <li><Link to="/keith">Education</Link></li>
+                  <li><Link to="/personalprojects">Personal</Link></li>
+                  <li><Link to="/schoolprojects">School</Link></li>
                 </ul>
               </li>
             </ul>
           </div>
         </nav>
         <Switch>
-        <Route path="/keith">
-                    <Home/>
-                </Route>
+          <Route path="/keith">
+              <Home/>
+          </Route>
+          <Route path="/personalprojects">
+              <Projects/>
+          </Route>
+          <Route path="/schoolprojects">
+              <Projects/>
+          </Route>
         </Switch>
       </Router>
-
-        
-      <div className="container">
-        <h3>Basic Navbar Example</h3>
-        <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
-      </div>
     </div>
   );
 }
