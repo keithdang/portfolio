@@ -4,7 +4,7 @@ export interface ProjectCardProps {
     stack: string[]
     start: Date
     end: Date
-    github?: string
+    github: string | ''
     evidence?: JSX.Element | string
     members: number
 }
