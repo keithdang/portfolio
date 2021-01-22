@@ -5,7 +5,7 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
     const [cardState, setCardState] =  useState<string>("default");
     
     const info = () => {
-        return <div>
+        return <div style={{maxWidth:400}}>
             <h4>Info</h4>
         <ul>
             {props.obj.description.map(info=>{

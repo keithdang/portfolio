@@ -1,16 +1,21 @@
 import React from 'react';
-import {hello} from '../lib/data/Projects'
+import {hello, partmarks} from '../lib/data/Projects'
 import ProjectCard from '../components/ProjectCard';
+import * as Module from '../lib/interfaces';
+import '../App.css'
 
 const Projects:React.FC=()=> {
-  return (
-    <ProjectCard obj={hello}/>
-    //   <div className="container">
-    //     <h3>Projects</h3>
-    //     <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
-    //     <ProjectCard obj={hello}/>
-    //   </div>
-  );
+    var projects:Module.ProjectCardProps[]=[partmarks,partmarks,hello]
+
+    return (
+        <div className="container">
+            {projects.map(project=>
+                <div className="col-md-6 projectCard">
+                    <ProjectCard obj={project}/>
+                </div>
+            )}
+        </div>
+    );
 }
 
 export default Projects;
