@@ -8,3 +8,13 @@ export interface ProjectCardProps {
     evidence?: JSX.Element | string
     members: number
 }
+
+export interface DanceCardProps {
+    event: string
+    format: string
+    info: string
+    placement: string
+    date: Date
+    location: string
+    media?: JSX.Element | string
+}

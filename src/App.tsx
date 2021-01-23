@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home'
 import Projects from './pages/Projects'
+import Dance from './pages/Dance'
 
 const App:React.FC=()=> {
   return (
@@ -15,10 +16,10 @@ const App:React.FC=()=> {
         <nav className="navbar navbar-default">
           <div className="container-fluid">
             <div className="navbar-header">
-            <Link className="navbar-brand" to="/">Home</Link>
+            <Link className="navbar-brand" to="/">Keith</Link>
             </div>
             <ul className="nav navbar-nav">
-              <li className="active"><a href="#">Home</a></li>
+              <li><Link to="/dance">Dance</Link></li>
               <li><Link to="/keith">Education</Link></li>
               <li className="dropdown">
                 <a className="dropdown-toggle" data-toggle="dropdown" href="#">Projects
@@ -37,6 +38,9 @@ const App:React.FC=()=> {
           </Route>
           <Route path="/personalprojects">
               <Projects/>
+          </Route>
+          <Route path="/dance">
+              <Dance/>
           </Route>
           <Route path="/schoolprojects">
               <Projects/>
