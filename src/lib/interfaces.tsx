@@ -18,3 +18,13 @@ export interface DanceCardProps {
     location: string
     media?: JSX.Element | string
 }
+
+export interface WorkCardProps {
+    company: string
+    role: string
+    description: string[]
+    start: Date
+    end: Date
+    location: string
+    media?: JSX.Element | string
+}

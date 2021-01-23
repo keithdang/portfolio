@@ -38,7 +38,6 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
         <div className="btn-group" role="group">
             <button type="button" className="btn btn-primary" onClick={()=>setCardState("placement")}>Placement</button>
             <button type="button" className="btn btn-primary" onClick={()=>setCardState("info")}>Info</button>
-            {/* <button type="button" className="btn btn-primary" onClick={()=>setCardState("default")}>Project</button> */}
         </div>
         <br/>
         {displayState()}

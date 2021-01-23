@@ -46,14 +46,6 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
             <button type="button" className="btn btn-primary" onClick={()=>setCardState("default")}>Project</button>
             <button type="button" className="btn btn-primary" onClick={()=>setCardState("info")}>Desc.</button>
             <button type="button" className="btn btn-primary" onClick={()=>setCardState("languages")}>Languages</button>
-            {/* <button
-                type="button"
-                className="btn btn-primary"
-                onClick={(e) => {
-                    e.preventDefault();
-                    window.open(props.obj.github);
-                }}
-            > Github</button> */}
         </div>
         <br/>
         {displayState()}
