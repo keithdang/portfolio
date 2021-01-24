@@ -12,8 +12,8 @@ export interface ProjectCardProps {
 export interface DanceCardProps {
     event: string
     format: string
-    info: string
-    placement: string
+    info?: string
+    placement?: string
     date: Date
     location: string
     media?: JSX.Element | string

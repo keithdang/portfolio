@@ -16,7 +16,7 @@ const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     const mainInfo = () => {
         return <div className='curricularInfo'>
             <h3>{props.obj.role}</h3>
-            <span>{props.obj.role}</span>
+            <span>{props.obj.club}</span>
             <br/>
             <span>{props.obj.start.toDateString()}</span>
         </div>
