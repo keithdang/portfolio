@@ -1,10 +1,9 @@
 import * as Module from '../interfaces';
+import {toronto, montreal, waterloo} from './General';
 
 var onePopping='1v1 Popping';
 var oneAll='1v1 All Styles';
 var twoAll='2v2 All Styles';
-var toronto='Toronto, ON';
-var montreal='Montreal, QC';
 var top8='Quarter Finalist';
 
 export const soulbotics: Module.DanceCardProps = {
@@ -83,10 +82,10 @@ export const topopping14: Module.DanceCardProps = {
 export const community: Module.DanceCardProps = {
     event: 'Community Waterloo',
     placement: 'Top 16',
-    info: '75+ dancers, randomly selected pairs once qualified',
+    info: '75+ dancers',
     format: twoAll,
     date: new Date(2020,2),
-    location: 'Waterloo, ON'
+    location: waterloo
 };
 
 export const lostIsFound: Module.DanceCardProps = {
