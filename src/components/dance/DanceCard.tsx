@@ -34,7 +34,6 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     return (
       <div className="container">
         <h3>{props.obj.event}</h3>
-        <br/>
         <div className="btn-group" role="group">
             <button type="button" className="btn btn-primary" onClick={()=>setCardState("placement")}>Placement</button>
             <button type="button" className="btn btn-primary" onClick={()=>setCardState("info")}>Info</button>

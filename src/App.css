@@ -41,6 +41,14 @@
   min-height: 350px;
 }
 
+/* .projectCard div h3 {
+  margin: 0;
+} */
+
+.projectInfo {
+  max-width: 450px;
+}
+
 .danceCard {
   min-height: 200px;
 }

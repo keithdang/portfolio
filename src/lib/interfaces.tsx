@@ -4,12 +4,12 @@ interface BaseProps {
     start: Date
     end: Date
     evidence?: JSX.Element | string
-    members: number
+    members?: number
 }
 
 export interface ProjectCardProps extends BaseProps{
-    stack: string[]
-    github: string | ''
+    stack?: string[]
+    github?: string | ''
 }
 
 export interface SchoolProjectProps extends BaseProps {

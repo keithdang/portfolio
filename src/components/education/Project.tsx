@@ -14,7 +14,7 @@ const Project:React.FC<{ obj: SchoolProjectProps }> = (props) => {
         <h3>{props.obj.title}</h3>
             <span>{props.obj.course}</span><br/>
             <span>{props.obj.start.toDateString()}</span><br/>
-            <span>{props.obj.members > 1 ? `Group Project- Members: ${props.obj.members}`: 'Independent'}</span><br/>
+            <span>{(props.obj.members && props.obj.members > 1) ? `Members: ${props.obj.members}`: 'Independent'}</span><br/>
             {props.obj.description.map(info=>{
                 return <span>{info}</span>
             })}

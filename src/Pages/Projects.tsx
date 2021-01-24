@@ -1,12 +1,9 @@
 import React from 'react';
-import {hello, partmarks} from '../lib/data/Projects'
+import {projects} from '../lib/data/Projects'
 import ProjectCard from '../components/ProjectCard';
-import * as Module from '../lib/interfaces';
 import '../App.css'
 
 const Projects:React.FC=()=> {
-    var projects:Module.ProjectCardProps[]=[partmarks,partmarks,hello]
-
     return (
         <div className="container">
             {projects.map(project=>
