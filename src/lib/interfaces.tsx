@@ -28,3 +28,18 @@ export interface WorkCardProps {
     location: string
     media?: JSX.Element | string
 }
+
+export interface CurricularProps {
+    club: string
+    role: string
+    description: string[]
+    start: Date
+    end: Date
+    media?: JSX.Element | string
+}
+
+export interface SkillProps {
+    category: string
+    list: string[]
+}
+

@@ -44,3 +44,15 @@
 .danceCard {
   min-height: 250px;
 }
+
+.curricularCard {
+  min-height: 350px;
+}
+
+.curricularInfo {
+  max-width: 400px;
+}
+
+.curricularDescription {
+  max-width: 500px;
+}

@@ -9,6 +9,8 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Dance from './pages/Dance'
 import Work from './pages/Work'
+import Education from './pages/Education'
+import Skills from './pages/Skills'
 
 const App:React.FC=()=> {
   return (
@@ -22,27 +24,35 @@ const App:React.FC=()=> {
             <ul className="nav navbar-nav">
               <li><Link to="/dance">Dance</Link></li>
               <li><Link to="/work">Work</Link></li>
-              <li><Link to="/">Education</Link></li>
-              <li className="dropdown">
+              <li><Link to="/education">Education</Link></li>
+              <li><Link to="/skills">Skills</Link></li>
+              <li><Link to="/projects">Projects</Link></li>
+              {/* <li className="dropdown">
                 <a className="dropdown-toggle" data-toggle="dropdown" href="#">Projects
                 </a>
                 <ul className="dropdown-menu">
                   <li><Link to="/personalprojects">Personal</Link></li>
                   <li><Link to="/schoolprojects">School</Link></li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
         <Switch>
-          <Route path="/personalprojects">
+          <Route path="/projects">
               <Projects/>
+          </Route>
+          <Route path="/skills">
+              <Skills/>
           </Route>
           <Route path="/dance">
               <Dance/>
           </Route>
           <Route path="/work">
               <Work/>
+          </Route>
+          <Route path="/education">
+              <Education/>
           </Route>
           <Route path="/schoolprojects">
               <Projects/>
