@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {DanceCardProps} from '../lib/interfaces'
+import {DanceCardProps} from '../../lib/interfaces'
 
 const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     const [cardState, setCardState] =  useState<string>("placement");

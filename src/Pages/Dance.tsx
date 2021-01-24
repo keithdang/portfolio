@@ -1,8 +1,9 @@
 import React from 'react';
-import {events, additionalEvents} from '../lib/data/Dance'
+import {events, testimonials} from '../lib/data/Dance'
 import '../App.css'
-import DanceCard from '../components/DanceCard';
-import OtherDanceBattles from '../components/OtherDanceBattles';
+import DanceCard from '../components/dance/DanceCard';
+import OtherDanceBattles from '../components/dance/OtherDanceBattles';
+import Testimonial from '../components/dance/Testimonial';
 
 const Dance:React.FC=()=> {
     return (
@@ -17,7 +18,12 @@ const Dance:React.FC=()=> {
             <div className="col-md-6">
                 <OtherDanceBattles/>
             </div>
-            
+            <div className="col-md-6">
+                <h3>Testimonials</h3>
+            {testimonials.map(info=>
+                    <Testimonial obj={info}/>
+            )}
+            </div>
         </div>
     );
 }

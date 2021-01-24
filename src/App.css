@@ -42,7 +42,12 @@
 }
 
 .danceCard {
-  min-height: 250px;
+  min-height: 150px;
+}
+
+.testimonial {
+  min-height: 150px;
+  max-width: 350px;
 }
 
 .curricularCard {

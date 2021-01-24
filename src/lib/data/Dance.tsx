@@ -140,3 +140,15 @@ export const heirthrone: Module.DanceCardProps = {
 };
 
 export const additionalEvents: Module.DanceCardProps[]= [tko, topopping14,community,lostIsFound,dareunion, justfeelit, flipdacoin, nuitblanche, heirthrone]
+
+export const jon: Module.TestimonialProps = {
+    name: 'Anonymous',
+    desc: 'Keith has an interesting way of breaking down movements and zoning in on the very mechanics of said movements. His take on Robotics and Animation is something that is easy to understand and apply.'
+}
+
+export const tamami: Module.TestimonialProps = {
+    name: 'T. Gavrilovic',
+    desc: 'This experience was so important for me. The basic philosophy of his style was born from his amazing experience and hard training. Keith\'s class gave me a new perspective on my dance. I would be so happy if I could incorporate some of your style into my dance.'
+}
+
+export const testimonials: Module.TestimonialProps[] = [tamami, jon];

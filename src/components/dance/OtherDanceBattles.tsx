@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import {additionalEvents} from '../lib/data/Dance'
-import { DanceCardProps } from '../lib/interfaces';
+import {additionalEvents} from '../../lib/data/Dance'
+import { DanceCardProps } from '../../lib/interfaces';
 
 const OtherDanceBattles:React.FC = () => {
     const [colState, setColumnState] =  useState<string>("location");

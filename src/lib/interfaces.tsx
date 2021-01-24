@@ -19,6 +19,11 @@ export interface DanceCardProps {
     media?: JSX.Element | string
 }
 
+export interface TestimonialProps {
+    name: string
+    desc: string
+}
+
 export interface WorkCardProps {
     company: string
     role: string
