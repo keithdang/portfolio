@@ -1,12 +1,20 @@
-export interface ProjectCardProps {
+interface BaseProps {
     title: string
     description: string[]
-    stack: string[]
     start: Date
     end: Date
-    github: string | ''
     evidence?: JSX.Element | string
     members: number
+}
+
+export interface ProjectCardProps extends BaseProps{
+    stack: string[]
+    github: string | ''
+}
+
+export interface SchoolProjectProps extends BaseProps {
+    course: string
+    contribution: string
 }
 
 export interface DanceCardProps {

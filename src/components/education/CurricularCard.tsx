@@ -1,6 +1,6 @@
 import React from 'react';
-import { CurricularProps} from '../lib/interfaces'
-import '../App.css'
+import { CurricularProps} from '../../lib/interfaces'
+import '../../App.css'
 
 const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     const description = () => {
