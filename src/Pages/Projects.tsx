@@ -5,7 +5,8 @@ import '../App.css'
 
 const Projects:React.FC=()=> {
     return (
-        <div className="container">
+        <div className="container pagedisplay">
+            <h2>Projects</h2>
             {projects.map(project=>
                 <div className="col-md-6 projectCard">
                     <ProjectCard obj={project}/>

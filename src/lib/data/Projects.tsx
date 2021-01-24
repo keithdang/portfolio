@@ -8,13 +8,12 @@ const statchat: Module.ProjectCardProps = {
     start: new Date(2020, 0, 5),
     end: new Date(2020, 0, 15),
     github: 'https://github.com/keithdang/stat-chat',
-    // members: 1
 };
 
 const partmarks: Module.ProjectCardProps = {
     title: 'Part Marks',
     description: [
-        'A School Portal for teachers and students to be able to create, register, and analyze classes', 
+        'Dashboard for teachers and students to be able to create, register, and analyze classes', 
         'Roles instituted for appropriate use of application',
         'SHA256 Crypto-js Hashing for accounts to be safetly created and stored in a database',
         'Analytics include seeing classroom and grade statistics of averages, graphs and filtering accounts'
@@ -24,7 +23,6 @@ const partmarks: Module.ProjectCardProps = {
     start: new Date(2020, 0, 5),
     end: new Date(2020, 0, 15),
     github: 'https://github.com/keithdang/partmarks',
-    // members: 1
 };
 
 const quizwiz: Module.ProjectCardProps = {

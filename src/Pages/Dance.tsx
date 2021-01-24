@@ -7,7 +7,8 @@ import Testimonial from '../components/dance/Testimonial';
 
 const Dance:React.FC=()=> {
     return (
-        <div className="container">
+        <div className="container pagedisplay">
+            <h2>Dance</h2>
             <div>
             {events.map(event=>
                 <div className="col-md-4 danceCard">

@@ -7,7 +7,7 @@ var twoAll='2v2 All Styles';
 var top8='Quarter Finalist';
 
 export const soulbotics: Module.DanceCardProps = {
-    event: 'SBK Animation Battle',
+    event: 'Soulbotics Animation Battle',
     info: '350+ dancers battled internationally',
     format: '1v1 Animation',
     date: new Date(2020, 0),

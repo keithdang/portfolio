@@ -16,9 +16,8 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
 
     const placement = () => {
         return <div style={{maxWidth:400}}>
-            <span>{props.obj.placement}</span>
-            <br/>
-            <span>{props.obj.info}</span>
+            {props.obj.placement && <h3>{props.obj.placement}</h3>}
+            {props.obj.info && props.obj.info.length < 40 ? <h3>{props.obj.info}</h3> : <h4>{props.obj.info}</h4>}
         </div>
     }
 

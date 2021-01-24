@@ -10,7 +10,7 @@ const Project:React.FC<{ obj: SchoolProjectProps }> = (props) => {
     }
 
     return (
-      <div className="container curricularDescription">
+      <div className="curricularDescription">
         <h3>{props.obj.title}</h3>
             <span>{props.obj.course}</span><br/>
             <span>{props.obj.start.toDateString()}</span><br/>

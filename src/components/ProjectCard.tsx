@@ -8,7 +8,7 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
         return <div className='projectInfo'>
             <span>{(props.obj.members && props.obj.members > 1) ? `Group Project- Members: ${props.obj.members}`: 'Independent'}</span>
             <h4>Info</h4>
-        <ul>
+        <ul className='cardList'>
             {props.obj.description.map(info=>{
                 return <li>{info}</li>
             })}

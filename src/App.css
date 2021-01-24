@@ -37,15 +37,37 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .pagedisplay {
+    width: 1470px;
+  }
+
+  .projectInfo {
+    max-width: 600px !important;
+  }
+
+  .workInfo {
+    max-width: 600px !important;
+  }
+}
+
+.pagedisplay h2 {
+  text-align: center;
+}
+
 .projectCard {
   min-height: 350px;
 }
 
-/* .projectCard div h3 {
-  margin: 0;
-} */
+.cardList {
+  padding-left: 20px;
+}
 
 .projectInfo {
+  max-width: 450px;
+}
+
+.workInfo {
   max-width: 450px;
 }
 
@@ -55,7 +77,7 @@
 
 .testimonial {
   min-height: 150px;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .curricularCard {

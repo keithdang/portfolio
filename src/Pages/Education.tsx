@@ -7,7 +7,8 @@ import Project from '../components/education/Project';
 
 const University:React.FC=()=> {
     return (
-        <div className="container">
+        <div className="container pagedisplay">
+            <h2>McGill University</h2>
             <div className="col-md-6">
                 <h3>Projects</h3>
                 {projects.map(project=>

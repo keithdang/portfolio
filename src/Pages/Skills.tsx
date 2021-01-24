@@ -5,7 +5,8 @@ import SkillCard from '../components/SkillCard';
 
 const Skills:React.FC=()=> {
     return (
-        <div className="container">
+        <div className="container pagedisplay">
+            <h2>Skills</h2>
             {skillList.map(item=>
                 <div className="col-md-4">
                     <SkillCard obj={item}/>

@@ -3,8 +3,8 @@ import {WorkCardProps} from '../lib/interfaces'
 
 const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
     const description = () => {
-        return <div style={{maxWidth:400}}>
-                    <ul>
+        return <div className='workInfo'>
+                    <ul className='cardList'>
             {props.obj.description.map(info=>{
                 return <li>{info}</li>
             })}

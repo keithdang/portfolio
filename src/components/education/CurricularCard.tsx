@@ -23,7 +23,7 @@ const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     }
 
     return (
-      <div className="container">
+      <div>
         {mainInfo()}
         {description()}
       </div>
