@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { fromTo } from '../lib/dateMod';
 import {WorkCardProps} from '../lib/interfaces'
 
 const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
@@ -17,7 +18,7 @@ const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
             <h3>{props.obj.role}</h3>
             <span>{props.obj.company}</span>
             <br/>
-            <span>{props.obj.start.toDateString()}</span>
+            <span>{fromTo(props.obj.start, props.obj.end)}</span>
             <br/>
             <span>{props.obj.location}</span>
         </div>

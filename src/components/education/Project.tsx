@@ -1,19 +1,14 @@
 import React from 'react';
 import { SchoolProjectProps} from '../../lib/interfaces'
 import '../../App.css'
+import { fromTo, monthYear } from '../../lib/dateMod';
 
 const Project:React.FC<{ obj: SchoolProjectProps }> = (props) => {
-    const description = () => {
-        return <div className='curricularDescription'>
-                    
-        </div>
-    }
-
     return (
       <div className="curricularDescription">
         <h3>{props.obj.title}</h3>
             <span>{props.obj.course}</span><br/>
-            <span>{props.obj.start.toDateString()}</span><br/>
+            <span>{props.obj.end ? fromTo(props.obj.start, props.obj.end): monthYear(props.obj.start)}</span><br/>
             <span>{(props.obj.members && props.obj.members > 1) ? `Members: ${props.obj.members}`: 'Independent'}</span><br/>
             {props.obj.description.map(info=>{
                 return <span>{info}</span>

@@ -95,8 +95,7 @@ const tournament: Module.ProjectCardProps = {
     ],
     stack: ['Web: Html, CSS, Javascript and Bootstrap',
         'Android: done using Java with Android Studios IDE'],
-    start: new Date(2018, 11),
-    end: new Date(2018, 11)
+    start: new Date(2018, 11)
 };
 
 const audioledglasses: Module.ProjectCardProps = {
@@ -106,8 +105,7 @@ const audioledglasses: Module.ProjectCardProps = {
         'Create various patterns and animations such as frame by frame of still images to scrolling vertical or horizontal',
         'Done through soldering on a perfboard, using an IC counter, Arduino MIC for audio input, and Arduino Uno'
     ],
-    start: new Date(2017, 7),
-    end: new Date(2017, 7)
+    start: new Date(2017, 8)
 };
 
 export const projects:Module.ProjectCardProps[]=[partmarks,statchat, quizwiz, pokemon, schedulebuilder, email, tournament, audioledglasses]

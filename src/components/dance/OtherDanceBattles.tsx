@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {additionalEvents} from '../../lib/data/Dance'
+import { monthYear } from '../../lib/dateMod';
 import { DanceCardProps } from '../../lib/interfaces';
 
 const OtherDanceBattles:React.FC = () => {
@@ -12,7 +13,7 @@ const OtherDanceBattles:React.FC = () => {
             case "format":
                 return item.format
             case "date":
-                return item.date.toDateString()
+                return monthYear(item.date)
             case "info":
                 return item.info
         }

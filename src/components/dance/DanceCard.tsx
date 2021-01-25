@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {DanceCardProps} from '../../lib/interfaces'
+import {monthYear} from '../../lib/dateMod'
 
 const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     const [cardState, setCardState] =  useState<string>("placement");
@@ -8,7 +9,7 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
         return <div style={{maxWidth:400}}>
             <span>{props.obj.format}</span>
             <br/>
-            <span>{props.obj.date.toDateString()}</span>
+            <span>{monthYear(props.obj.date)}</span>
             <br/>
             <span>{props.obj.location}</span>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { CurricularProps} from '../../lib/interfaces'
 import '../../App.css'
+import { fromTo } from '../../lib/dateMod';
 
 const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     const description = () => {
@@ -18,7 +19,7 @@ const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
             <h3>{props.obj.role}</h3>
             <span>{props.obj.club}</span>
             <br/>
-            <span>{props.obj.start.toDateString()}</span>
+            <span>{fromTo(props.obj.start,props.obj.end)}</span>
         </div>
     }
 

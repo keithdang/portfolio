@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
+import { fromTo, monthYear } from '../lib/dateMod';
 import {ProjectCardProps} from '../lib/interfaces'
 
 const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
-    const [cardState, setCardState] =  useState<string>("default");
+    const [cardState, setCardState] =  useState<string>("info");
     
     const info = () => {
         return <div className='projectInfo'>
-            <span>{(props.obj.members && props.obj.members > 1) ? `Group Project- Members: ${props.obj.members}`: 'Independent'}</span>
-            <h4>Info</h4>
-        <ul className='cardList'>
-            {props.obj.description.map(info=>{
-                return <li>{info}</li>
-            })}
-        </ul>
-        {props.obj.github && <a href={props.obj.github}>Go To Github</a>}
+            <span>{(props.obj.members && props.obj.members > 1) ? `Group Project- Members: ${props.obj.members}`: 'Independent'}</span><br/>
+            <span>{props.obj.end ? fromTo(props.obj.start, props.obj.end): monthYear(props.obj.start)}</span>
+            <ul className='cardList'>
+                {props.obj.description.map(info=>{
+                    return <li>{info}</li>
+                })}
+            </ul>
+            {props.obj.github && <a href={props.obj.github}>Go To Github</a>}
         </div>
     }
 

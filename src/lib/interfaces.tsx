@@ -2,7 +2,7 @@ interface BaseProps {
     title: string
     description: string[]
     start: Date
-    end: Date
+    end?: Date
     evidence?: JSX.Element | string
     members?: number
 }
