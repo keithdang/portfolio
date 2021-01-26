@@ -72,7 +72,23 @@
 }
 
 .danceCard {
-  min-height: 200px;
+  min-height: 150px;
+}
+
+.danceHeader {
+  display: flex;
+}
+
+.danceHeader h3 {
+  margin: 0;
+  padding-right: 1em;
+}
+
+.danceInfo {
+  max-width: 400px;
+}
+.danceInfo h3 {
+  margin: 0;
 }
 
 .testimonial {

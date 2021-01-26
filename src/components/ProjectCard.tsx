@@ -1,10 +1,47 @@
 import React, { useState } from 'react';
 import { fromTo, monthYear } from '../lib/dateMod';
-import {ProjectCardProps} from '../lib/interfaces'
+import {ButtonProps, ProjectCardProps} from '../lib/interfaces'
 
 const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
-    const [cardState, setCardState] =  useState<string>("info");
-    
+    enum ButtonStates {
+        PROJECT = 'Project',
+        DESCRIPTION = 'Desc.',
+        LANGUAGES = 'Languages'
+    }
+
+    const [cardState, setCardState] =  useState<string>(ButtonStates.DESCRIPTION);
+
+    const createButton = (buttonProp: ButtonProps) => {
+        if(buttonProp.hoverEnter){
+            return <button 
+                type="button" 
+                onMouseEnter={()=>setCardState(buttonProp.hoverEnter!!)} 
+                onMouseLeave={()=>setCardState(buttonProp.hoverLeave!!)} 
+                className="btn btn-primary"
+            >{buttonProp.name}</button>
+        }else{
+            return <button 
+                type="button" 
+                className="btn btn-primary"
+            >{buttonProp.name}</button>
+        }
+    }
+
+    const buttonPanel = () => {
+        var buttonProp: ButtonProps[] = [
+            {name: ButtonStates.DESCRIPTION},
+            {name: ButtonStates.PROJECT,hoverEnter:ButtonStates.PROJECT,hoverLeave:ButtonStates.DESCRIPTION},
+        ]
+        if(props.obj.stack){
+            buttonProp.push({name: ButtonStates.LANGUAGES,hoverEnter:ButtonStates.LANGUAGES,hoverLeave:ButtonStates.DESCRIPTION})
+        }
+        return <div className="btn-group" role="group">
+            {buttonProp.map(item => {
+                return createButton(item)
+            })}
+        </div>
+    }
+
     const info = () => {
         return <div className='projectInfo'>
             <span>{(props.obj.members && props.obj.members > 1) ? `Group Project- Members: ${props.obj.members}`: 'Independent'}</span><br/>
@@ -31,23 +68,20 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
 
     const displayState = () => {
         switch(cardState){
-            case "languages":
+            case ButtonStates.LANGUAGES:
                 return languages()      
-            case "info":
+            case ButtonStates.PROJECT:
+                return <span>Project</span>
+            case ButtonStates.DESCRIPTION:
                 return info()
             default:
-                return <span>Project</span>
+                return info()
         }
     }
     return (
       <div className="container">
         <h3>{props.obj.title}</h3>
-        {/* <br/> */}
-        <div className="btn-group" role="group">
-            <button type="button" className="btn btn-primary" onClick={()=>setCardState("default")}>Project</button>
-            <button type="button" className="btn btn-primary" onClick={()=>setCardState("info")}>Desc.</button>
-            {props.obj.stack && <button type="button" className="btn btn-primary" onClick={()=>setCardState("languages")}>Languages</button>}
-        </div>
+        {buttonPanel()}
         <br/>
         {displayState()}
       </div>

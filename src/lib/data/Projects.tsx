@@ -108,4 +108,4 @@ const audioledglasses: Module.ProjectCardProps = {
     start: new Date(2017, 8)
 };
 
-export const projects:Module.ProjectCardProps[]=[partmarks,statchat, quizwiz, pokemon, schedulebuilder, email, tournament, audioledglasses]
+export const projects: Module.ProjectCardProps[] =[partmarks,statchat, quizwiz, pokemon, schedulebuilder, email, tournament, audioledglasses];

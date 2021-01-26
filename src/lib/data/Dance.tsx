@@ -8,7 +8,7 @@ var top8='Quarter Finalist';
 
 export const soulbotics: Module.DanceCardProps = {
     event: 'Soulbotics Animation Battle',
-    info: '350+ dancers battled internationally',
+    info: '350+ international dancers',
     format: '1v1 Animation',
     date: new Date(2020, 0),
     placement: 'Top 32',

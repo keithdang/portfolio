@@ -56,3 +56,8 @@ export interface SkillProps {
     list: string[]
 }
 
+export interface ButtonProps {
+    name: string
+    hoverEnter?: string
+    hoverLeave?: string
+}
