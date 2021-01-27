@@ -1,5 +1,9 @@
 import * as Module from '../interfaces';
 import {kanata, montreal, waterloo} from './General';
+import Oracle from '../images/oracleLogo.jpg';
+import FixMeStick from '../images/fixmestick.jpg';
+import Nokia from '../images/nokia.jpg';
+import Reflex from '../images/reflexPhotonics.jpg';
 
 export const oracle: Module.WorkCardProps = {
     company: 'Oracle',
@@ -13,7 +17,8 @@ export const oracle: Module.WorkCardProps = {
     ],
     start: new Date(2018, 10),
     end: new Date(),
-    location: waterloo
+    location: waterloo,
+    media: Oracle
 }
 
 export const fixmestick: Module.WorkCardProps = {
@@ -26,7 +31,8 @@ export const fixmestick: Module.WorkCardProps = {
     ],
     start: new Date(2017, 5),
     end: new Date(2018, 4),
-    location: montreal
+    location: montreal,
+    media: FixMeStick
 }
 
 export const nokia: Module.WorkCardProps = {
@@ -39,7 +45,8 @@ export const nokia: Module.WorkCardProps = {
     ],
     start: new Date(2015, 4),
     end: new Date(2015, 7),
-    location: kanata
+    location: kanata,
+    media: Nokia
 }
 
 export const reflex: Module.WorkCardProps = {
@@ -51,6 +58,7 @@ export const reflex: Module.WorkCardProps = {
     ],
     start: new Date(2017, 5),
     end: new Date(2018, 4),
-    location: montreal
+    location: montreal,
+    media: Reflex
 }
 export const work: Module.WorkCardProps[] = [oracle, fixmestick, nokia, reflex];

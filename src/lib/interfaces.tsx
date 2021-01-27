@@ -39,7 +39,7 @@ export interface WorkCardProps {
     start: Date
     end: Date
     location: string
-    media?: JSX.Element | string
+    media?: string
 }
 
 export interface CurricularProps {

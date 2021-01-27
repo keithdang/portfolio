@@ -8,7 +8,7 @@ const Work:React.FC=()=> {
         <div className="container pagedisplay">
             <h2>Job Experience</h2>
             {work.map(company=>
-                <div className="col-md-6 WorkCard">
+                <div className="col-md-6 workCard">
                     <WorkCard obj={company}/>
                 </div>
             )}

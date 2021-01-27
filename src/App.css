@@ -37,16 +37,34 @@
   }
 }
 
-@media (min-width: 1200px) {
+.image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.reflex {
+  width: 300px;
+  height: 200px;
+  object-fit: scale-down;
+}
+
+.pagedisplay {
+  width: 1000px;
+}
+
+@media (min-width: 1800px) {
   .pagedisplay {
-    width: 1470px;
+    width: 1700px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .pagedisplay {
+    width: 1300px;
   }
 
   .projectInfo {
-    max-width: 600px !important;
-  }
-
-  .workInfo {
     max-width: 600px !important;
   }
 }
@@ -68,7 +86,15 @@
 }
 
 .workInfo {
-  max-width: 450px;
+  max-width: 650px;
+}
+
+.workCard {
+  min-height: 400px;
+}
+
+.workHeader {
+  max-width: 400px;
 }
 
 .danceCard {
@@ -81,7 +107,7 @@
 
 .danceHeader h3 {
   margin: 0;
-  padding-right: 1em;
+  padding-right: 0.2em;
 }
 
 .danceInfo {
