@@ -11,18 +11,12 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
     }
 
     var buttonProp: ButtonProps[] = [
-        {name: ButtonStates.PROJECT},
-        {name: ButtonStates.DESCRIPTION,
-            hoverEnter:ButtonStates.DESCRIPTION,
-            hoverLeave:ButtonStates.PROJECT
-        },
+        {name: ButtonStates.PROJECT,hoverEnter:ButtonStates.PROJECT,},
+        {name: ButtonStates.DESCRIPTION,hoverEnter:ButtonStates.DESCRIPTION},
     ]
 
     if(props.obj.stack){
-        buttonProp.push({name: ButtonStates.LANGUAGES,
-            hoverEnter:ButtonStates.LANGUAGES,
-            hoverLeave:ButtonStates.PROJECT
-        })
+        buttonProp.push({name: ButtonStates.LANGUAGES,hoverEnter:ButtonStates.LANGUAGES})
     }
 
     const [cardState, setCardState] =  useState<string>(ButtonStates.PROJECT);
