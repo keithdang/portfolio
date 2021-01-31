@@ -5,7 +5,7 @@ import { fromTo, monthYear } from '../../lib/dateMod';
 
 const Project:React.FC<{ obj: SchoolProjectProps }> = (props) => {
     return (
-      <div className="curricularDescription">
+      <div className="row curricularDescription">
         <div className="col-md-6">
         <h3>{props.obj.title}</h3>
             <span>{props.obj.course}</span><br/>

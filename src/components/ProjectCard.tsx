@@ -64,8 +64,12 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
 
     return (
       <div>
-        <h3>{props.obj.title}</h3>
-        {<PanelButton obj={buttonProp} thefunc={setCardState}/>}
+        <div className="row">
+            <h3 className="col-md-6">{props.obj.title}</h3>
+            <div className="col-md-6">
+                <PanelButton obj={buttonProp} thefunc={setCardState}/>
+            </div>
+        </div>
         <br/>
         <div className="allProjInfo">
             {displayState()}

@@ -18,7 +18,7 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     const placement = () => {
         return <div className="danceInfo">
             {props.obj.placement && <h3>{props.obj.placement}</h3>}
-            {props.obj.info && props.obj.info.length < 40 ? <h3>{props.obj.info}</h3> : <h4>{props.obj.info}</h4>}
+            {props.obj.info && props.obj.info.length < 40 ? <h3>{props.obj.info}</h3> : <h5>{props.obj.info}</h5>}
         </div>
     }
 
@@ -34,8 +34,11 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     return (
       <div className="container">
         <div className="danceHeader">
-            <h3>{props.obj.event}</h3>
+            <div className="row">
+                <h4 className="col-md-8">{props.obj.event}</h4>
             <button type="button" onMouseEnter={()=>setCardState("info")} onMouseLeave={()=>setCardState("placement")} className="btn btn-primary" onClick={()=>setCardState("info")}>Info</button>
+            </div>
+            
         </div>
         {displayState()}
       </div>

@@ -9,21 +9,23 @@ const Dance:React.FC=()=> {
     return (
         <div className="container pagedisplay">
             <h2>Dance</h2>
-            <div>
-            {events.map(event=>
-                <div className="col-md-4 danceCard">
-                    <DanceCard obj={event}/>
+            <div className="row">
+                {events.map(event=>
+                    <div className="col-xl-4 col-md-6 danceCard">
+                        <DanceCard obj={event}/>
+                    </div>
+                )}
+            </div>
+            <div className="row">
+                <div className="col-xl-7">
+                    <OtherDanceBattles/>
                 </div>
-            )}
-            </div>
-            <div className="col-md-6">
-                <OtherDanceBattles/>
-            </div>
-            <div className="col-md-6">
-                <h3>Testimonials</h3>
-            {testimonials.map(info=>
-                    <Testimonial obj={info}/>
-            )}
+                <div className="col-xl-5">
+                    <h3>Testimonials</h3>
+                {testimonials.map(info=>
+                        <Testimonial obj={info}/>
+                )}
+                </div>
             </div>
         </div>
     );

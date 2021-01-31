@@ -16,7 +16,7 @@ const App:React.FC=()=> {
   return (
     <div>
       <Router>
-        <nav className="navbar navbar-default">
+        {/* <nav className="navbar navbar-default">
           <div className="container-fluid">
             <div className="navbar-header">
             <Link className="navbar-brand" to="/">Keith</Link>
@@ -27,6 +27,10 @@ const App:React.FC=()=> {
               <li><Link to="/education">Education</Link></li>
               <li><Link to="/skills">Skills</Link></li>
               <li><Link to="/projects">Projects</Link></li>
+            </ul>
+          </div>
+        </nav> */}
+
               {/* <li className="dropdown">
                 <a className="dropdown-toggle" data-toggle="dropdown" href="#">Projects
                 </a>
@@ -35,6 +39,19 @@ const App:React.FC=()=> {
                   <li><Link to="/schoolprojects">School</Link></li>
                 </ul>
               </li> */}
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          {/* <a className="navbar-brand" href="#">Navbar</a> */}
+          <Link className="navbar-brand" to="/">Keith</Link>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+            <li><Link className="nav-link" to="/dance">Dance</Link></li>
+              <li><Link className="nav-link" to="/work">Work</Link></li>
+              <li><Link className="nav-link" to="/education">Education</Link></li>
+              <li><Link className="nav-link" to="/skills">Skills</Link></li>
+              <li><Link className="nav-link" to="/projects">Projects</Link></li>
             </ul>
           </div>
         </nav>

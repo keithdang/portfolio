@@ -7,11 +7,13 @@ const Skills:React.FC=()=> {
     return (
         <div className="container pagedisplay">
             <h2>Skills</h2>
-            {skillList.map(item=>
-                <div className="col-md-4">
-                    <SkillCard obj={item}/>
-                </div>
-            )}
+            <div className="row">
+                {skillList.map(item=>
+                    <div className="col-md-4">
+                        <SkillCard obj={item}/>
+                    </div>
+                )}
+            </div>
         </div>
     );
 }

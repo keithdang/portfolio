@@ -16,7 +16,7 @@ const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     }
 
     const mainInfo = () => {
-        return <div className='curricularInfo'>
+        return <div className='row curricularInfo'>
                     <div className="col-md-6">
                         <h3>{props.obj.role}</h3>
                         <span>{props.obj.club}</span>
