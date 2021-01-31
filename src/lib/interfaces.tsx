@@ -3,13 +3,14 @@ interface BaseProps {
     description: string[]
     start: Date
     end?: Date
-    evidence?: JSX.Element | string
+    media: Photo | Video
     members?: number
 }
 
 export interface ProjectCardProps extends BaseProps{
     stack?: string[]
     github?: string | ''
+    adjustImage? : string
 }
 
 export interface SchoolProjectProps extends BaseProps {
@@ -48,7 +49,7 @@ export interface CurricularProps {
     description: string[]
     start: Date
     end: Date
-    media?: JSX.Element | string
+    media: Photo
 }
 
 export interface SkillProps {
@@ -60,5 +61,17 @@ export interface ButtonProps {
     name: string
     hoverEnter?: string
     hoverLeave?: string
+    clickEnter?: string
 }
 
+export interface Video {
+    link: string
+}
+
+export interface Photo {
+    image: string
+}
+
+export function isPhoto(med: Photo | Video): med is Photo {
+    return 'image' in  med;
+}

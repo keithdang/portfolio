@@ -10,6 +10,12 @@ const PanelButton:React.FC<{ obj: ButtonProps[], thefunc(x:string): void }> = (p
                 onMouseLeave={()=>props.thefunc(item.hoverLeave!!)} 
                 className="btn btn-primary"
             >{item.name}</button>
+        }else if(item.clickEnter){
+            return <button 
+            type="button" 
+            onClick={()=>props.thefunc(item.clickEnter!!)} 
+            className="btn btn-primary"
+        >{item.name}</button>
         }else{
             return <button 
                 type="button" 

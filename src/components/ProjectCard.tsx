@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { fromTo, monthYear } from '../lib/dateMod';
-import {ButtonProps, ProjectCardProps} from '../lib/interfaces'
+import {ButtonProps, isPhoto, ProjectCardProps} from '../lib/interfaces'
 import PanelButton from './PanelButton';
 
 const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
@@ -11,15 +11,21 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
     }
 
     var buttonProp: ButtonProps[] = [
-        {name: ButtonStates.DESCRIPTION},
-        {name: ButtonStates.PROJECT,hoverEnter:ButtonStates.PROJECT,hoverLeave:ButtonStates.DESCRIPTION},
+        {name: ButtonStates.PROJECT},
+        {name: ButtonStates.DESCRIPTION,
+            hoverEnter:ButtonStates.DESCRIPTION,
+            hoverLeave:ButtonStates.PROJECT
+        },
     ]
 
     if(props.obj.stack){
-        buttonProp.push({name: ButtonStates.LANGUAGES,hoverEnter:ButtonStates.LANGUAGES,hoverLeave:ButtonStates.DESCRIPTION})
+        buttonProp.push({name: ButtonStates.LANGUAGES,
+            hoverEnter:ButtonStates.LANGUAGES,
+            hoverLeave:ButtonStates.PROJECT
+        })
     }
 
-    const [cardState, setCardState] =  useState<string>(ButtonStates.DESCRIPTION);
+    const [cardState, setCardState] =  useState<string>(ButtonStates.PROJECT);
 
     const info = () => {
         return <div className='projectInfo'>
@@ -36,7 +42,6 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
 
     const languages = () => {
         return <div className='projectInfo'>
-        <h4>Languages</h4>
         {props.obj.stack && <ul>
             {props.obj.stack.map(info=>{
                 return <li>{info}</li>
@@ -45,23 +50,32 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
     </div>
     }
 
+    const media = () => {
+        return isPhoto(props.obj.media) ? 
+            <img className={props.obj.adjustImage ? props.obj.adjustImage : "projRectImage"} src={props.obj.media.image} /> :
+            <iframe className="projVid" src={props.obj.media.link} />
+            
+    }
+
     const displayState = () => {
         switch(cardState){
             case ButtonStates.LANGUAGES:
                 return languages()      
             case ButtonStates.PROJECT:
-                return <span>Project</span>
+                return media()
             case ButtonStates.DESCRIPTION:
                 return info()
         }
     }
 
     return (
-      <div className="container">
+      <div>
         <h3>{props.obj.title}</h3>
         {<PanelButton obj={buttonProp} thefunc={setCardState}/>}
         <br/>
-        {displayState()}
+        <div className="allProjInfo">
+            {displayState()}
+        </div>
       </div>
   );
 }

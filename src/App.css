@@ -43,6 +43,39 @@
   object-fit: cover;
 }
 
+.squareImage {
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+}
+
+.rectImage {
+  width: 200px;
+  height: 100px;
+  object-fit: fill;
+}
+
+.projRectImage {
+  width: 550px;
+  height: 300px;
+}
+
+.projRectImageFit {
+  width: 550px;
+  height: 300px;
+  object-fit: fill;
+}
+
+.projVid {
+  width: 550px;
+  height: 300px;
+}
+
+.schoolProjVideo {
+  width: 250px;
+  height: 150px;
+}
+
 .reflex {
   width: 300px;
   height: 200px;
@@ -83,6 +116,10 @@
 
 .projectInfo {
   max-width: 450px;
+}
+
+.allProjInfo {
+  height: 350px;
 }
 
 .workInfo {
@@ -127,7 +164,7 @@
 }
 
 .curricularInfo {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .curricularDescription {

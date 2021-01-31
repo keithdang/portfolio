@@ -1,4 +1,7 @@
 import * as Module from '../interfaces';
+import pokemonPhoto  from '../images/pokemonReact.png'
+import quizwizPhoto  from '../images/quizwiz.png'
+import tourneyPhoto  from '../images/tournamentBracket2.jpg'
 
 const statchat: Module.ProjectCardProps = {
     title: 'Stat Chat',
@@ -8,6 +11,7 @@ const statchat: Module.ProjectCardProps = {
     start: new Date(2020, 0, 5),
     end: new Date(2020, 0, 15),
     github: 'https://github.com/keithdang/stat-chat',
+    media: {link: "https://www.youtube.com/embed/ZN3g0wVLlzM"}
 };
 
 const partmarks: Module.ProjectCardProps = {
@@ -23,6 +27,7 @@ const partmarks: Module.ProjectCardProps = {
     start: new Date(2020, 0, 5),
     end: new Date(2020, 0, 15),
     github: 'https://github.com/keithdang/partmarks',
+    media: {link: "https://www.youtube.com/embed/ET8dlFerC-o"}
 };
 
 const quizwiz: Module.ProjectCardProps = {
@@ -39,7 +44,9 @@ const quizwiz: Module.ProjectCardProps = {
     ],
     start: new Date(2018, 8, 12),
     end: new Date(2018, 8, 13),
-    github: 'https://github.com/keithdang/quizWiz'
+    github: 'https://github.com/keithdang/quizWiz',
+    media: {image: quizwizPhoto},
+    adjustImage: 'projRectImageFit'
 };
 
 const pokemon: Module.ProjectCardProps = {
@@ -56,7 +63,8 @@ const pokemon: Module.ProjectCardProps = {
         'Node.js, Express API, Passport.js, Google+ API, MongoDB & Mongoose'],
     start: new Date(2018,7,24),
     end: new Date(2018,7,28),
-    github: 'https://github.com/keithdang/pokemonGame'
+    github: 'https://github.com/keithdang/pokemonGame',
+    media: {image: pokemonPhoto}
 };
 
 const schedulebuilder: Module.ProjectCardProps = {
@@ -70,7 +78,8 @@ const schedulebuilder: Module.ProjectCardProps = {
     stack: ['React, Bootstrap, react-week-calendar, Javascript'],
     start: new Date(2018,7,28),
     end: new Date(2018,7,30),
-    github: 'https://github.com/keithdang/react-weekly-calendar'
+    github: 'https://github.com/keithdang/react-weekly-calendar',
+    media: {link: "https://www.youtube.com/embed/HnY1VmZAW0s"}
 };
 const email: Module.ProjectCardProps = {
     title: 'Email Application',
@@ -85,7 +94,8 @@ const email: Module.ProjectCardProps = {
         'Express API, MongoDB & Mongoose, SendGrid API'],
     start: new Date(2018, 9, 22),
     end: new Date(2018, 9, 22),
-    github: 'https://github.com/keithdang/emails'
+    github: 'https://github.com/keithdang/emails',
+    media: {link: "https://www.youtube.com/embed/96ThBSO8_Ug"}
 };
 const tournament: Module.ProjectCardProps = {
     title: 'Tournament Bracket Android & Web App',
@@ -95,7 +105,9 @@ const tournament: Module.ProjectCardProps = {
     ],
     stack: ['Web: Html, CSS, Javascript and Bootstrap',
         'Android: done using Java with Android Studios IDE'],
-    start: new Date(2018, 11)
+    start: new Date(2018, 11),
+    media: {image: tourneyPhoto},
+    adjustImage: 'projRectImageFit'
 };
 
 const audioledglasses: Module.ProjectCardProps = {
@@ -105,7 +117,8 @@ const audioledglasses: Module.ProjectCardProps = {
         'Create various patterns and animations such as frame by frame of still images to scrolling vertical or horizontal',
         'Done through soldering on a perfboard, using an IC counter, Arduino MIC for audio input, and Arduino Uno'
     ],
-    start: new Date(2017, 8)
+    start: new Date(2017, 8),
+    media: {link: "https://www.youtube.com/embed/blUll83krOU"}
 };
 
 export const projects: Module.ProjectCardProps[] =[partmarks,statchat, quizwiz, pokemon, schedulebuilder, email, tournament, audioledglasses];
