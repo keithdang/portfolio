@@ -9,6 +9,7 @@ const Dance:React.FC=()=> {
     return (
         <div className="container pagedisplay">
             <h2>Dance</h2>
+            <h2>Notable Battles Competed</h2>
             <div className="row">
                 {events.map(event=>
                     <div className="col-xl-4 col-md-6 danceCard">

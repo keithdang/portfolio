@@ -14,7 +14,8 @@ export const mssd: Module.CurricularProps ={
     'Active member from 2012-2015 and then became Vice president of Communications and Events'],
     start: new Date(2016,8),
     end: new Date(2017,3),
-    media: {image: mssdPhoto}
+    media: {image: mssdPhoto},
+    styling: 'squareImage'
 }
 
 export const eus: Module.CurricularProps ={
@@ -23,7 +24,8 @@ export const eus: Module.CurricularProps ={
     description: ['Representing junior engineering students through organizing academic and social events'],
     start: new Date(2013,8),
     end: new Date(2014,3),
-    media: {image: eusPhoto}
+    media: {image: eusPhoto},
+    styling: 'squareImage'
 }
 
 export const ewb: Module.CurricularProps ={
@@ -32,7 +34,8 @@ export const ewb: Module.CurricularProps ={
     description: ['Organized, volunteered, and participated in multiple fundraising events such as barbeques, RunToEnd Poverty and more'],
     start: new Date(2013,8),
     end: new Date(2014,3),
-    media: {image: ewbPhoto}
+    media: {image: ewbPhoto},
+    styling: 'rectImage'
 }
 
 export const curriculars: Module.CurricularProps[] = [mssd,eus,ewb];

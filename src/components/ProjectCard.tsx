@@ -22,7 +22,7 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
     const [cardState, setCardState] =  useState<string>(ButtonStates.PROJECT);
 
     const info = () => {
-        return <div className='projectInfo'>
+        return <div>
             <span>{(props.obj.members && props.obj.members > 1) ? `Group Project- Members: ${props.obj.members}`: 'Independent'}</span><br/>
             <span>{props.obj.end ? fromTo(props.obj.start, props.obj.end): monthYear(props.obj.start)}</span>
             <ul className='cardList'>
@@ -35,8 +35,8 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
     }
 
     const languages = () => {
-        return <div className='projectInfo'>
-        {props.obj.stack && <ul>
+        return <div>
+        {props.obj.stack && <ul className='cardList'>
             {props.obj.stack.map(info=>{
                 return <li>{info}</li>
             })}
@@ -63,15 +63,21 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
     }
 
     return (
-      <div>
-        <div className="row">
-            <h3 className="col-md-6">{props.obj.title}</h3>
-            <div className="col-md-6">
-                <PanelButton obj={buttonProp} thefunc={setCardState}/>
+      <div className="card bg-light mb-3">
+        <div className="card-header">
+            <div className="row">
+                {props.obj.title.length > 20 ?
+                <h5 className="col-md-6">{props.obj.title}</h5> :
+                <h3 className="col-md-6">{props.obj.title}</h3>
+            }
+                
+                <div className="col-md-6 rightAlign">
+                    <PanelButton obj={buttonProp} thefunc={setCardState}/>
+                </div>
             </div>
         </div>
-        <br/>
-        <div className="allProjInfo">
+        
+        <div className="card-body allProjInfo">
             {displayState()}
         </div>
       </div>

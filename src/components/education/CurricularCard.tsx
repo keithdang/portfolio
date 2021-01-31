@@ -6,8 +6,8 @@ import { fromTo } from '../../lib/dateMod';
 
 const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     const description = () => {
-        return <div className='curricularDescription'>
-                    <ul>
+        return <div className='card-body'>
+                    <ul className="cardList">
             {props.obj.description.map(info=>{
                 return <li>{info}</li>
             })}
@@ -16,23 +16,25 @@ const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     }
 
     const mainInfo = () => {
-        return <div className='row curricularInfo'>
-                    <div className="col-md-6">
-                        <h3>{props.obj.role}</h3>
-                        <span>{props.obj.club}</span>
-                        <br/>
-                        <span>{fromTo(props.obj.start,props.obj.end)}</span>
+        return <div className='card-header'>
+                    <div className='row'>
+                        <div className="col-md-6">
+                            <h3>{props.obj.role}</h3>
+                            <span>{props.obj.club}</span>
+                            <br/>
+                            <span>{fromTo(props.obj.start,props.obj.end)}</span>
+                        </div>
+                        <div className="col-md-6 rightAlign"> 
+                            <img 
+                            className={props.obj.styling} 
+                            src={props.obj.media.image} />
+                        </div> 
                     </div>
-                    <div className="col-md-6"> 
-                        <img 
-                        className={props.obj.club === 'Engineers Without Borders' ? "rectImage": "squareImage"} 
-                        src={props.obj.media.image} />
-                    </div> 
                 </div>
     }
 
     return (
-      <div>
+      <div className="card bg-light mb-3">
         {mainInfo()}
         {description()}
       </div>

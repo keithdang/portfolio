@@ -50,6 +50,7 @@ export interface CurricularProps {
     start: Date
     end: Date
     media: Photo
+    styling?: string
 }
 
 export interface SkillProps {

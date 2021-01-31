@@ -50,7 +50,7 @@ const quizwiz: Module.ProjectCardProps = {
 };
 
 const pokemon: Module.ProjectCardProps = {
-    title: 'Full Stack Pokemon Game',
+    title: 'Pokemon Game',
     description: [
         'Updated previous pokemon game project into a web based application',
         'UI allows users to select a team of pokemon to battle and level up as they win games',

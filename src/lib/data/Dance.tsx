@@ -141,7 +141,7 @@ export const heirthrone: Module.DanceCardProps = {
 export const additionalEvents: Module.DanceCardProps[]= [tko, topopping14,community,lostIsFound,dareunion, justfeelit, flipdacoin, nuitblanche, heirthrone]
 
 export const jon: Module.TestimonialProps = {
-    name: 'Anonymous',
+    name: 'J. Vuong',
     desc: 'Keith has an interesting way of breaking down movements and zoning in on the very mechanics of said movements. His take on Robotics and Animation is something that is easy to understand and apply.'
 }
 

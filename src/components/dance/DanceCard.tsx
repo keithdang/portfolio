@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
-import {DanceCardProps} from '../../lib/interfaces'
+import {ButtonProps, DanceCardProps} from '../../lib/interfaces'
 import {monthYear} from '../../lib/dateMod'
+import PanelButton from '../PanelButton';
 
 const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
-    const [cardState, setCardState] =  useState<string>("placement");
+    enum ButtonStates {
+        INFO = 'Info',
+        PLACEMENT = 'Placement'
+    }
+
+    const [cardState, setCardState] =  useState<string>(ButtonStates.PLACEMENT);
     
+    var buttonProp: ButtonProps[] = [
+        {name: ButtonStates.INFO, hoverEnter:ButtonStates.INFO, hoverLeave: ButtonStates.PLACEMENT},
+    ]
+
     const info = () => {
         return <div style={{maxWidth:400}}>
             <span>{props.obj.format}</span>
@@ -18,29 +28,32 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     const placement = () => {
         return <div className="danceInfo">
             {props.obj.placement && <h3>{props.obj.placement}</h3>}
-            {props.obj.info && props.obj.info.length < 40 ? <h3>{props.obj.info}</h3> : <h5>{props.obj.info}</h5>}
+            {props.obj.info && props.obj.info.length < 40 ? <h3>{props.obj.info}</h3> : <span>{props.obj.info}</span>}
         </div>
     }
 
     const displayState = () => {
         switch(cardState){
-            case "placement":
+            case ButtonStates.PLACEMENT:
                 return placement()
-            case "info":
+            case ButtonStates.INFO:
                 return info()
         }
     }
 
     return (
-      <div className="container">
-        <div className="danceHeader">
+      <div className="card bg-light mb-3">
+        <div className="card-header">
             <div className="row">
-                <h4 className="col-md-8">{props.obj.event}</h4>
-            <button type="button" onMouseEnter={()=>setCardState("info")} onMouseLeave={()=>setCardState("placement")} className="btn btn-primary" onClick={()=>setCardState("info")}>Info</button>
+                <h4 className="col-md-10">{props.obj.event}</h4>
+                <div className="col-md-2 rightAlign">
+                    <PanelButton obj={buttonProp} thefunc={setCardState}/>
+                </div>
             </div>
-            
         </div>
-        {displayState()}
+        <div className="card-body">
+            {displayState()}
+        </div>
       </div>
   );
 }
