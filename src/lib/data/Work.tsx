@@ -24,10 +24,10 @@ export const oracle: Module.WorkCardProps = {
 export const fixmestick: Module.WorkCardProps = {
     company: 'FixMeStick',
     role: 'Software Developer',
-    description: ['Agile Developement of the FixMeStick Windows and Linux Application',
+    description: ['Agile Developement of FixMeStick\'s Windows and Linux Application',
         'C++ application to resolve bugs and improve performance dealing with Encryption, Booting of application, Device compatibility and more using Object Oriented Concepts',
-        'Improved front end of FixMeStick application through Html, CSS, Javascript, and Bootstrap',
-        'Automated retreival and dianogstics of logs and information of our user\'s use of the fixmestick application to better understand what specified issues our customers are dealing with in an efficient manner. Automated scripts in javascript, nodejs, bash'
+        'Front end improvements through Html, CSS, Javascript, and Bootstrap',
+        'Automated retreival and diagnostics of logs and information of FMS users. Automated scripts in javascript, nodejs, bash'
     ],
     start: new Date(2017, 5),
     end: new Date(2018, 4),

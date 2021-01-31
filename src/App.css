@@ -41,6 +41,7 @@
   width: 300px;
   height: 200px;
   object-fit: cover;
+  /* padding-right: 15px; */
 }
 
 .squareImage {
@@ -80,10 +81,18 @@
   width: 300px;
   height: 200px;
   object-fit: scale-down;
+  padding-right: 10px;
 }
 
 .pagedisplay {
   width: 1000px;
+  max-width: 1500px;
+}
+
+@media (max-width: 1000px) {
+  .workCard {
+    width: fit-content;
+  }
 }
 
 @media (min-width: 1800px) {
@@ -100,6 +109,11 @@
   .projectInfo {
     max-width: 600px !important;
   }
+}
+
+.rightAlign {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .pagedisplay h2 {
@@ -124,14 +138,11 @@
 
 .workInfo {
   max-width: 650px;
+  height: 250px;
 }
 
 .workCard {
   min-height: 400px;
-}
-
-.workHeader {
-  max-width: 400px;
 }
 
 .danceCard {

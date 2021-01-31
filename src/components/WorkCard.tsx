@@ -4,7 +4,7 @@ import {WorkCardProps} from '../lib/interfaces'
 
 const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
     const description = () => {
-        return <div className='workInfo'>
+        return <div className='workInfo card-body'>
                     <ul className='cardList'>
                         {props.obj.description.map(info=>{
                             return <li>{info}</li>
@@ -14,22 +14,24 @@ const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
     }
 
     const jobHeader = () => {
-        return <div className='row workInfo'>
-            <div className="col-md-5">
-                <h3>{props.obj.role}</h3>
-                <span>{props.obj.company}</span>
-                <br/>
-                <span>{fromTo(props.obj.start, props.obj.end)}</span>
-                <br/>
-                <span>{props.obj.location}</span>
+        return <div className='card-header'>
+            <div className="row">
+                <div className="col-sm-6">
+                    <h3>{props.obj.role}</h3>
+                    <span>{props.obj.company}</span>
+                    <br/>
+                    <span>{fromTo(props.obj.start, props.obj.end)}</span>
+                    <br/>
+                    <span>{props.obj.location}</span>
+                </div>
+                {props.obj.media && <div className="col-sm-6 rightAlign"> 
+                <img className={props.obj.company !== 'Reflex Photonics' ? "image": "reflex"} src={props.obj.media} /></div>}
             </div>
-            {props.obj.media && <div className="col-md-7"> 
-            <img className={props.obj.company !== 'Reflex Photonics' ? "image": "reflex"} src={props.obj.media} /></div>}
         </div>
     }
 
     return (
-      <div>
+      <div className="card bg-light mb-3">
         {jobHeader()}
         {description()}
       </div>
