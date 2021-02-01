@@ -138,6 +138,11 @@ export const heirthrone: Module.DanceCardProps = {
     location: montreal
 };
 
+export const competitions: Module.HeaderProps = {
+    title: "Achievements",
+    desc: "When I'm not coding I dance. I have learned various street dance styles such as Hip-Hop, Breaking, Krump, House & Locking but my main is one called Popping. One component I strive for is battling. Below are notable competitions I have won or placed around Canada and the world."
+}
+
 export const additionalEvents: Module.DanceCardProps[]= [tko, topopping14,community,lostIsFound,dareunion, justfeelit, flipdacoin, nuitblanche, heirthrone]
 
 export const jon: Module.TestimonialProps = {

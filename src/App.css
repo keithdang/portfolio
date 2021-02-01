@@ -116,6 +116,11 @@
   justify-content: flex-end;
 }
 
+.centerAlign {
+  display: flex;
+  justify-content: center;
+}
+
 .pagedisplay h2 {
   text-align: center;
 }
@@ -180,4 +185,8 @@
 
 .curricularDescription {
   max-width: 500px;
+}
+
+.imageHeader {
+  width: 300px;
 }

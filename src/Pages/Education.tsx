@@ -4,15 +4,16 @@ import {projects} from '../lib/data/SchoolProjects'
 import '../App.css'
 import CurricularCard from '../components/education/CurricularCard';
 import Project from '../components/education/Project';
-
+import Header from '../components/common/Header';
+import McGill from '../lib/images/McGill_logo.png';
 const University:React.FC=()=> {
     return (
         <div className="container pagedisplay">
-            <h2>McGill University</h2>
+            <Header obj={{image:McGill}}/>
             <div className="row">
                 <div className="col-xl-6">
                     <div>
-                        <div className="card bg-light mb-3">
+                        <div className="card bg-light mb-3 mt-3">
                             <div className="card-header">
                                 <h3>Bachelor's of Electrical Engineering</h3>
                             </div>
@@ -28,14 +29,14 @@ const University:React.FC=()=> {
                         </div>
                     </div>
                     <div>
-                        <h3>Projects</h3>
+                        <Header obj={{title: "Projects"}}/>
                         {projects.map(project=>
                         <Project obj={project}/>
                         )}
                     </div>
                 </div>
                 <div className="col-xl-6">
-                    <h3>Extra Curriculars</h3>
+                    <Header obj={{title: "Extra Curriculars"}}/>
                     {curriculars.map(curricular=>
                         <CurricularCard obj={curricular}/>
                     )}

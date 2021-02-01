@@ -73,6 +73,12 @@ export interface Photo {
     image: string
 }
 
+export interface HeaderProps {
+    title?: string,
+    image?: string,
+    desc?: string
+}
+
 export function isPhoto(med: Photo | Video): med is Photo {
     return 'image' in  med;
 }

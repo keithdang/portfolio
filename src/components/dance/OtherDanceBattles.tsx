@@ -13,10 +13,10 @@ const OtherDanceBattles:React.FC = () => {
     }
 
     var buttonProp: ButtonProps[] = [
-        {name: ButtonStates.LOCATION},
-        {name: ButtonStates.FORMAT,hoverEnter:ButtonStates.FORMAT,hoverLeave:ButtonStates.LOCATION},
-        {name: ButtonStates.DATE,hoverEnter:ButtonStates.DATE,hoverLeave:ButtonStates.LOCATION},
-        {name: ButtonStates.INFO,hoverEnter:ButtonStates.INFO,hoverLeave:ButtonStates.LOCATION},
+        {name: ButtonStates.LOCATION, hoverEnter:ButtonStates.LOCATION},
+        {name: ButtonStates.FORMAT,hoverEnter:ButtonStates.FORMAT},
+        {name: ButtonStates.DATE,hoverEnter:ButtonStates.DATE},
+        {name: ButtonStates.INFO,hoverEnter:ButtonStates.INFO},
     ]
 
     const [colState, setColumnState] =  useState<string>(ButtonStates.LOCATION);
@@ -34,10 +34,12 @@ const OtherDanceBattles:React.FC = () => {
         }
     }
 
-    return <div>
-        <h3>Additonal Battles Qualified</h3>
+    return <div className="card">
+        <div className="card-header">
+            <h3>Additonal Battles Qualified</h3>
+        </div>
         <table className="table">
-            <thead>
+            <thead className="thead-light">
                 <tr>
                     <th scope="col">Event</th>
                     <th scope="col">Placement</th>

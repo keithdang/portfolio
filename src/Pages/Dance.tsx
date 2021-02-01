@@ -1,15 +1,17 @@
 import React from 'react';
-import {events, testimonials} from '../lib/data/Dance'
+import {events, testimonials, competitions} from '../lib/data/Dance'
 import '../App.css'
 import DanceCard from '../components/dance/DanceCard';
 import OtherDanceBattles from '../components/dance/OtherDanceBattles';
 import Testimonial from '../components/dance/Testimonial';
+import Header from '../components/common/Header';
+
 
 const Dance:React.FC=()=> {
     return (
         <div className="container pagedisplay">
-            <h2>Dance</h2>
-            <h2>Notable Battles Competed</h2>
+            <Header obj={{title:"Dance"}}/>
+            <Header obj={competitions}/>
             <div className="row">
                 {events.map(event=>
                     <div className="col-xl-4 col-md-6 danceCard">
@@ -22,10 +24,18 @@ const Dance:React.FC=()=> {
                     <OtherDanceBattles/>
                 </div>
                 <div className="col-xl-5">
-                    <h3>Testimonials</h3>
-                {testimonials.map(info=>
-                        <Testimonial obj={info}/>
-                )}
+                    <div className="card">
+                        <div className="card-header">
+                            <h3>Testimonials</h3>
+                        </div>
+                        <div className="list-group list-group-flush">
+                        {testimonials.map(info=>
+                                <li className="list-group-item">
+                                    <Testimonial obj={info}/>
+                                </li>
+                        )}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

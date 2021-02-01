@@ -2,11 +2,12 @@ import React from 'react';
 import {skillList} from '../lib/data/Skills'
 import '../App.css'
 import SkillCard from '../components/SkillCard';
+import Header from '../components/common/Header';
 
 const Skills:React.FC=()=> {
     return (
         <div className="container pagedisplay">
-            <h2>Skills</h2>
+            <Header obj={{title:"Skills"}}/>
             <div className="row">
                 {skillList.map(item=>
                     <div className="col-md-4">

@@ -2,11 +2,12 @@ import React from 'react';
 import {projects} from '../lib/data/Projects'
 import ProjectCard from '../components/ProjectCard';
 import '../App.css'
+import Header from '../components/common/Header';
 
 const Projects:React.FC=()=> {
     return (
         <div className="container pagedisplay">
-            <h2>Projects</h2>
+            <Header obj={{title:"Projects"}}/>
             <div className="row">
             {projects.map(project=>
                 <div className="col-xl-6 projectCard">
