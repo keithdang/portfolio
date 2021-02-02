@@ -10,7 +10,7 @@ const SkillCard:React.FC<{ obj: SkillProps }> = (props) => {
             </div>
             <ul className="list-group list-group-flush">
                 {props.obj.list.map(item=>{
-                    return <li className="list-group-item blue-grey text-white">{item}</li>
+                    return <li className="list-group-item blue-grey text-white largeFont">{item}</li>
                 })}
             </ul>
         </div>

@@ -79,6 +79,12 @@ export interface HeaderProps {
     desc?: string
 }
 
+export interface MediaProps {
+    media: Photo | Video
+    text?: string
+    styling?: string
+}
+
 export function isPhoto(med: Photo | Video): med is Photo {
     return 'image' in  med;
 }

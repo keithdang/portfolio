@@ -1,5 +1,8 @@
 import * as Module from '../interfaces';
 import {toronto, montreal, waterloo} from './General';
+import dance1 from '../images/dance1.jpg';
+import dance5 from '../images/dance5.jpg';
+import timemoves from '../images/time moves.jpg';
 
 var onePopping='1v1 Popping';
 var oneAll='1v1 All Styles';
@@ -156,3 +159,13 @@ export const tamami: Module.TestimonialProps = {
 }
 
 export const testimonials: Module.TestimonialProps[] = [tamami, jon];
+
+export const reel: Module.MediaProps[] = [
+    {media: {image:timemoves}, text: 'Collaboration with Context Media'},
+    {media: {image:dance1}, text: 'Battling at Millenium Funk\'N'}, 
+    {media: {image:dance5}, text: 'Performance for McGill Student Street Dancer'},
+    {media: {link:"https://www.youtube.com/embed/azlWxPmfclk"}},
+    {media: {link:"https://www.youtube.com/embed/8sNppJ4gQV8"}},
+    {media: {link:"https://www.youtube.com/embed/AatqTk5GBh4"}}
+
+]

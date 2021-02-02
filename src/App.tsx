@@ -11,6 +11,7 @@ import Dance from './pages/Dance'
 import Work from './pages/Work'
 import Education from './pages/Education'
 import Skills from './pages/Skills'
+import Reel from './pages/Reel';
 
 const App:React.FC=()=> {
   return (
@@ -27,7 +28,7 @@ const App:React.FC=()=> {
               <a className="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Dance</a>
               <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/dance">Accomplishments</Link></li>
-                  <li><Link className="dropdown-item" to="/dance">Reel</Link></li>
+                  <li><Link className="dropdown-item" to="/reel">Reel</Link></li>
                 </ul></li>
               <li><Link className="nav-link" to="/work">Work</Link></li>
               <li><Link className="nav-link" to="/education">Education</Link></li>
@@ -45,6 +46,9 @@ const App:React.FC=()=> {
           </Route>
           <Route path="/dance">
               <Dance/>
+          </Route>
+          <Route path="/reel">
+              <Reel/>
           </Route>
           <Route path="/work">
               <Work/>
