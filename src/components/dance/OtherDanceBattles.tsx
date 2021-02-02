@@ -34,12 +34,12 @@ const OtherDanceBattles:React.FC = () => {
         }
     }
 
-    return <div className="card">
+    return <div className="card blue-grey text-white">
         <div className="card-header">
             <h3>Additonal Battles Qualified</h3>
         </div>
-        <table className="table">
-            <thead className="thead-light">
+        <table className="table text-white">
+            <thead>
                 <tr>
                     <th scope="col">Event</th>
                     <th scope="col">Placement</th>

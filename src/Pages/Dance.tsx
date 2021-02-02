@@ -24,13 +24,13 @@ const Dance:React.FC=()=> {
                     <OtherDanceBattles/>
                 </div>
                 <div className="col-xl-5">
-                    <div className="card">
-                        <div className="card-header">
+                    <div className="card blue-grey">
+                        <div className="card-header text-white">
                             <h3>Testimonials</h3>
                         </div>
                         <div className="list-group list-group-flush">
                         {testimonials.map(info=>
-                                <li className="list-group-item">
+                                <li className="list-group-item blue-grey text-white">
                                     <Testimonial obj={info}/>
                                 </li>
                         )}

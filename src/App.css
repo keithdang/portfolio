@@ -176,7 +176,7 @@
 }
 
 .curricularCard {
-  min-height: 350px;
+  min-height: 145px;
 }
 
 .curricularInfo {
@@ -189,4 +189,12 @@
 
 .imageHeader {
   width: 300px;
+}
+
+.blue-grey {
+  background-color: #337ea7;
+}
+
+.blue-grey .card-header {
+  background-color: #2a6b8e;
 }

@@ -6,13 +6,13 @@ import { fromTo } from '../../lib/dateMod';
 
 const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     const description = () => {
-        return <div className='card-body'>
+        return <div className='card-body curricularCard'>
                     <ul className="cardList">
-            {props.obj.description.map(info=>{
-                return <li>{info}</li>
-            })}
-        </ul>
-        </div>
+                     {props.obj.description.map(info=>{
+                            return <li>{info}</li>
+                        })}
+                    </ul>
+                </div>
     }
 
     const mainInfo = () => {
@@ -34,7 +34,7 @@ const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     }
 
     return (
-      <div className="card bg-light mb-3">
+      <div className="card blue-grey text-white mb-3">
         {mainInfo()}
         {description()}
       </div>

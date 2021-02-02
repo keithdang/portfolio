@@ -14,40 +14,21 @@ import Skills from './pages/Skills'
 
 const App:React.FC=()=> {
   return (
-    <div>
+    <div className="bg-secondary">
       <Router>
-        {/* <nav className="navbar navbar-default">
-          <div className="container-fluid">
-            <div className="navbar-header">
-            <Link className="navbar-brand" to="/">Keith</Link>
-            </div>
-            <ul className="nav navbar-nav">
-              <li><Link to="/dance">Dance</Link></li>
-              <li><Link to="/work">Work</Link></li>
-              <li><Link to="/education">Education</Link></li>
-              <li><Link to="/skills">Skills</Link></li>
-              <li><Link to="/projects">Projects</Link></li>
-            </ul>
-          </div>
-        </nav> */}
-
-              {/* <li className="dropdown">
-                <a className="dropdown-toggle" data-toggle="dropdown" href="#">Projects
-                </a>
-                <ul className="dropdown-menu">
-                  <li><Link to="/personalprojects">Personal</Link></li>
-                  <li><Link to="/schoolprojects">School</Link></li>
-                </ul>
-              </li> */}
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          {/* <a className="navbar-brand" href="#">Navbar</a> */}
           <Link className="navbar-brand" to="/">Keith</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-            <li><Link className="nav-link" to="/dance">Dance</Link></li>
+              <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Dance</a>
+              <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item" to="/dance">Accomplishments</Link></li>
+                  <li><Link className="dropdown-item" to="/dance">Reel</Link></li>
+                </ul></li>
               <li><Link className="nav-link" to="/work">Work</Link></li>
               <li><Link className="nav-link" to="/education">Education</Link></li>
               <li><Link className="nav-link" to="/skills">Skills</Link></li>

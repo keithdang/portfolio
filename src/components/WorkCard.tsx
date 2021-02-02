@@ -25,13 +25,14 @@ const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
                     <span>{props.obj.location}</span>
                 </div>
                 {props.obj.media && <div className="col-sm-6 rightAlign"> 
-                <img className={props.obj.company !== 'Reflex Photonics' ? "image": "reflex"} src={props.obj.media} /></div>}
+                    <img className={props.obj.company !== 'Reflex Photonics' ? "image": "reflex"} src={props.obj.media} />
+                </div>}
             </div>
         </div>
     }
 
     return (
-      <div className="card bg-light mb-3">
+      <div className="card blue-grey text-white mb-3">
         {jobHeader()}
         {description()}
       </div>

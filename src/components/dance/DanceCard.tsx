@@ -42,7 +42,7 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     }
 
     return (
-      <div className="card bg-light mb-3">
+      <div className="card blue-grey text-white mb-3">
         <div className="card-header">
             <div className="row">
                 <h4 className="col-md-10">{props.obj.event}</h4>

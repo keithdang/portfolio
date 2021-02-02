@@ -13,7 +13,7 @@ const University:React.FC=()=> {
             <div className="row">
                 <div className="col-xl-6">
                     <div>
-                        <div className="card bg-light mb-3 mt-3">
+                        <div className="card blue-grey text-white mb-3 mt-3">
                             <div className="card-header">
                                 <h3>Bachelor's of Electrical Engineering</h3>
                             </div>

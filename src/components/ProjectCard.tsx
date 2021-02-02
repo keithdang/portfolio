@@ -63,7 +63,7 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
     }
 
     return (
-      <div className="card bg-light mb-3">
+      <div className="card blue-grey text-white mb-3">
         <div className="card-header">
             <div className="row">
                 {props.obj.title.length > 20 ?
