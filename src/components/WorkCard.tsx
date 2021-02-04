@@ -14,9 +14,9 @@ const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
     }
 
     const jobHeader = () => {
-        return <div className='card-header'>
-            <div className="row">
-                <div className="col-sm-6">
+        return <div className='card-header work-header'>
+            <div className="row work-row-header">
+                <div className="col-sm-6 ">
                     <h3>{props.obj.role}</h3>
                     <span>{props.obj.company}</span>
                     <br/>

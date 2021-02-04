@@ -15,7 +15,7 @@ import Reel from './pages/Reel';
 
 const App:React.FC=()=> {
   return (
-    <div className="bg-secondary">
+    <div className="background">
       <Router>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Link className="navbar-brand" to="/">Keith</Link>

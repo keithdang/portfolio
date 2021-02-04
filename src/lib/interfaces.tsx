@@ -5,6 +5,7 @@ interface BaseProps {
     end?: Date
     media: Photo | Video
     members?: number
+    styling?: string
 }
 
 export interface ProjectCardProps extends BaseProps{

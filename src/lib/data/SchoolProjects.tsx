@@ -19,7 +19,8 @@ const dpmbot: Module.SchoolProjectProps = {
     members: 6,
     course: 'Design Principles & Methods',
     contribution: 'Timeline of the project consisted of two segments. The first half is in groups of 2 in which I programmed routines for autonomous navigation and path recognition using motion and light sensors. The second half is merging with other groups to form a group of 6 where I focused on the construction of the robot',
-    media: {image: dpmPhoto}
+    media: {image: dpmPhoto},
+    styling: 'rectImage'
 };
 
 export const projects:Module.SchoolProjectProps[] =[electromyography,dpmbot];

@@ -16,7 +16,7 @@ const Project:React.FC<{ obj: SchoolProjectProps }> = (props) => {
                     </div>
                     <div className="col-md-6 rightAlign"> 
                         {isPhoto(props.obj.media) ? 
-                        <img className={"squareImage"} src={props.obj.media.image} /> :
+                        <img className={props.obj.styling} src={props.obj.media.image} /> :
                         <iframe className="schoolProjVideo" src={props.obj.media.link} />
                     }
                     </div> 
