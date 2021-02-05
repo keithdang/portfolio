@@ -25,7 +25,7 @@ const Dance:React.FC=()=> {
                 </div>
                 <div className="col-xl-5">
                     <div className="card blue-grey">
-                        <div className="card-header text-white">
+                        <div className="card-header text-white center-text">
                             <h3>Testimonials</h3>
                         </div>
                         <div className="list-group list-group-flush">

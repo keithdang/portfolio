@@ -8,7 +8,7 @@ const Home:React.FC=()=> {
       <div className="container pagedisplay">
         <Header obj={{title:"Welcome"}}/>
         <div className="card blue-grey">
-            <div className="card-body text-white">
+            <div className="card-body text-white center-text">
               <div>
                 <p>
                   Welcome to my website. My name is Keith Dang. I graduated from
