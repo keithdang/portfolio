@@ -27,8 +27,10 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
 
     const placement = () => {
         return <div className="danceInfo">
+            <div>
             {props.obj.placement && <h3>{props.obj.placement}</h3>}
             {props.obj.info && props.obj.info.length < 40 ? <h3>{props.obj.info}</h3> : <span>{props.obj.info}</span>}
+            </div>
         </div>
     }
 
@@ -44,7 +46,7 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     return (
       <div className="card blue-grey text-white mb-3">
         <div className="card-header">
-            <div className="row">
+            <div className="row dance-row-header">
                 <h4 className="col-md-10">{props.obj.event}</h4>
                 <div className="col-md-2 rightAlign">
                     <PanelButton obj={buttonProp} thefunc={setCardState}/>

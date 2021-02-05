@@ -14,10 +14,10 @@ const University:React.FC=()=> {
                 <div className="col-xl-6">
                     <div>
                         <div className="card blue-grey text-white mb-3 mt-3">
-                            <div className="card-header">
+                            <div className="card-header centerAlign">
                                 <h3>Bachelor's of Electrical Engineering</h3>
                             </div>
-                            <div className="card-body">
+                            <div className="card-body centerAlign">
                                 <p>
                                     Montreal, QC
                                     <br />

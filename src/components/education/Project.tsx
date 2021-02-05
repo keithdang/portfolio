@@ -6,9 +6,9 @@ import { fromTo, monthYear } from '../../lib/dateMod';
 const Project:React.FC<{ obj: SchoolProjectProps }> = (props) => {
     return (
         <div className="card blue-grey text-white mb-3">
-            <div className='card-header'>
-                <div className="row">
-                    <div className="col-md-6">
+            <div className='card-header school-proj-header'>
+                <div className="row school-proj-row-header">
+                    <div className="col-md-6 school-proj-title">
                     <h3>{props.obj.title}</h3>
                         <span>{props.obj.course}</span><br/>
                         <span>{props.obj.end ? fromTo(props.obj.start, props.obj.end): monthYear(props.obj.start)}</span><br/>

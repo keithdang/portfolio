@@ -16,15 +16,15 @@ const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     }
 
     const mainInfo = () => {
-        return <div className='card-header work-header'>
-                    <div className='row work-row-header'>
-                        <div className="col-sm-6">
+        return <div className='card-header curricular-header'>
+                    <div className='row curricular-row-header'>
+                        <div className="col-sm-7">
                             <h3>{props.obj.role}</h3>
                             <span>{props.obj.club}</span>
                             <br/>
                             <span>{fromTo(props.obj.start,props.obj.end)}</span>
                         </div>
-                        <div className="col-sm-6 rightAlign"> 
+                        <div className="col-sm-5 rightAlign"> 
                             <img 
                             className={props.obj.styling} 
                             src={props.obj.media.image} />
