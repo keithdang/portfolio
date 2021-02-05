@@ -16,7 +16,7 @@ const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
     const jobHeader = () => {
         return <div className='card-header work-header'>
             <div className="row work-row-header">
-                <div className="col-sm-6 ">
+                <div className="col-md-6">
                     <h3>{props.obj.role}</h3>
                     <span>{props.obj.company}</span>
                     <br/>
@@ -24,7 +24,7 @@ const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
                     <br/>
                     <span>{props.obj.location}</span>
                 </div>
-                {props.obj.media && <div className="col-sm-6 rightAlign"> 
+                {props.obj.media && <div className="col-md-6 rightAlign"> 
                     <img className={props.obj.company !== 'Reflex Photonics' ? "image": "reflex"} src={props.obj.media} />
                 </div>}
             </div>

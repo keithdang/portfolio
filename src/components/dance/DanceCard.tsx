@@ -16,12 +16,14 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     ]
 
     const info = () => {
-        return <div style={{maxWidth:400}}>
-            <span>{props.obj.format}</span>
-            <br/>
-            <span>{monthYear(props.obj.date)}</span>
-            <br/>
-            <span>{props.obj.location}</span>
+        return <div className="centerAlign">
+            <div>
+                <span>{props.obj.format}</span>
+                <br/>
+                <span>{monthYear(props.obj.date)}</span>
+                <br/>
+                <span>{props.obj.location}</span>
+            </div>
         </div>
     }
 
@@ -47,8 +49,8 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
       <div className="card blue-grey text-white mb-3">
         <div className="card-header">
             <div className="row dance-row-header">
-                <h4 className="col-md-10">{props.obj.event}</h4>
-                <div className="col-md-2 rightAlign">
+                <h4 className="col-sm-10">{props.obj.event}</h4>
+                <div className="col-sm-2 rightAlign">
                     <PanelButton obj={buttonProp} thefunc={setCardState}/>
                 </div>
             </div>

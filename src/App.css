@@ -107,11 +107,46 @@
   font-size: large;
 }
 
-.pagedisplay {
-  width: 1000px;
-  max-width: 1500px;
+.work-header {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 5px;
 }
 
+@media (min-width: 776px) {
+  .rightAlign {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .workInfo {
+    height: 250px;
+  }
+
+  .school-proj-header {
+    padding: 0;
+  }
+
+  .school-proj-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+
+  .allProjInfo {
+    height: 350px;
+  }
+}
+
+@media (max-width: 776px) {
+  .panel-button {
+    display: inline-grid;
+  }
+  .work-header {
+    padding: 10px;
+  }
+}
 @media (max-width: 1000px) {
   .workCard {
     width: fit-content;
@@ -121,12 +156,13 @@
 @media (min-width: 1800px) {
   .pagedisplay {
     width: 1700px;
+    max-width: 1500px;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1799px) {
   .pagedisplay {
-    width: 1300px;
+    max-width: 1300px;
   }
 
   .projectInfo {
@@ -134,14 +170,13 @@
   }
 }
 
-.rightAlign {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .centerAlign {
   display: flex;
   justify-content: center;
+}
+
+.center-text {
+  text-align: center;
 }
 
 .pagedisplay h2 {
@@ -160,27 +195,11 @@
   max-width: 450px;
 }
 
-.allProjInfo {
-  height: 350px;
-}
-
-.workInfo {
-  max-width: 650px;
-  height: 250px;
-}
-
 .work-row-header {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.work-header {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 0;
-  padding-left: 5px;
 }
 
 .curricular-row-header {
@@ -199,16 +218,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.school-proj-header {
-  padding: 0;
-}
-
-.school-proj-title {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 30px;
 }
 
 .workCard {

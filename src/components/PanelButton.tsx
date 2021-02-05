@@ -30,7 +30,7 @@ const PanelButton:React.FC<{ obj: ButtonProps[], thefunc(x:string): void }> = (p
         }
     }
 
-    return <div className="btn-group" role="group">
+    return <div className="btn-group panel-button" role="group">
             {props.obj.map(item => {
                 return theButton(item)
             })}
