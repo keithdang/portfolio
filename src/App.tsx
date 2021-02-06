@@ -5,13 +5,13 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import Home from './pages/Home'
-import Projects from './pages/Projects'
-import Dance from './pages/Dance'
-import Work from './pages/Work'
-import Education from './pages/Education'
-import Skills from './pages/Skills'
-import Reel from './pages/Reel';
+import Home from './page/Home'
+import Projects from './page/Projects'
+import Dance from './page/Dance'
+import Work from './page/Work'
+import Education from './page/Education'
+import Skills from './page/Skills'
+import Reel from './page/Reel';
 import './lib/General.css'
 
 const App:React.FC=()=> {
