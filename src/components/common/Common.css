@@ -2,6 +2,10 @@
   width: 300px;
 }
 
+.button-color {
+  background-color: #42cdd7;
+}
+
 @media (max-width: 776px) {
   .panel-button {
     display: inline-grid;

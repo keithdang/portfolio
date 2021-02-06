@@ -25,9 +25,12 @@
 
 .blue-grey {
   background-color: #337ea7;
-  /* background-color: rosybrown; */
 }
 
 .blue-grey .card-header {
   background-color: #2a6b8e;
+}
+
+.header-color {
+  background-color: #a1cbdf;
 }
