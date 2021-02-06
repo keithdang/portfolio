@@ -46,7 +46,7 @@ const quizwiz: Module.ProjectCardProps = {
     end: new Date(2018, 8, 13),
     github: 'https://github.com/keithdang/quizWiz',
     media: {image: quizwizPhoto},
-    adjustImage: 'projRectImageFit'
+    adjustImage: 'proj-rect-image-fit'
 };
 
 const pokemon: Module.ProjectCardProps = {
@@ -107,7 +107,7 @@ const tournament: Module.ProjectCardProps = {
         'Android: done using Java with Android Studios IDE'],
     start: new Date(2018, 11),
     media: {image: tourneyPhoto},
-    adjustImage: 'projRectImageFit'
+    adjustImage: 'proj-rect-image-fit'
 };
 
 const audioledglasses: Module.ProjectCardProps = {

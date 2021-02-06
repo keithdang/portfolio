@@ -1,0 +1,54 @@
+.curricular-card {
+  min-height: 145px;
+}
+
+.curricular-row-header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curricular-header {
+  padding: 0;
+}
+
+.curricular-list {
+  padding-left: 20px;
+}
+
+.school-proj-row-header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.school-proj-video {
+  width: 100%;
+  height: 220px;
+}
+
+.square-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.rect-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+@media (min-width: 776px) {
+  .school-proj-header {
+    padding: 0;
+  }
+
+  .school-proj-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+}

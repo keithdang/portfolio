@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderProps } from '../../lib/interfaces';
-
+import './Common.css';
 
 const Header:React.FC<{obj: HeaderProps}>=(props)=> {
     return (
@@ -11,7 +11,7 @@ const Header:React.FC<{obj: HeaderProps}>=(props)=> {
                     {props.obj.desc && <span>{props.obj.desc}</span>}
                 </div>
                 {props.obj.image && 
-                    <img className="imageHeader" src={props.obj.image} />
+                    <img className="image-header" src={props.obj.image} />
                 }
             </div>
             

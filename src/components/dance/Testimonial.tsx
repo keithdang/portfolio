@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {TestimonialProps} from '../../lib/interfaces'
-import '../../App.css'
 
 const Testimonial:React.FC<{ obj: TestimonialProps }> = (props) => {
     return (

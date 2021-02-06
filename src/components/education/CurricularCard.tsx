@@ -2,12 +2,12 @@ import React from 'react';
 import { CurricularProps} from '../../lib/interfaces'
 import '../../App.css'
 import { fromTo } from '../../lib/dateMod';
-
+import './Education.css'
 
 const CurricularCard:React.FC<{ obj: CurricularProps }> = (props) => {
     const description = () => {
-        return <div className='card-body curricularCard'>
-                    <ul className="cardList">
+        return <div className='card-body curricular-card'>
+                    <ul className="curricular-list">
                      {props.obj.description.map(info=>{
                             return <li>{info}</li>
                         })}

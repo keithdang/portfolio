@@ -1,0 +1,21 @@
+.proj-vid {
+  width: 100%;
+  height: 100%;
+}
+
+.proj-rect-image {
+  width: 100%;
+  height: 100%;
+}
+
+.proj-rect-image-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+@media (min-width: 776px) {
+  .all-proj-info {
+    height: 350px;
+  }
+}

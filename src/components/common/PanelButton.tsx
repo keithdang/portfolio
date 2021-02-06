@@ -1,4 +1,4 @@
-import { ButtonProps } from "../lib/interfaces"
+import { ButtonProps } from "../../lib/interfaces"
 
 const PanelButton:React.FC<{ obj: ButtonProps[], thefunc(x:string): void }> = (props) => {
 

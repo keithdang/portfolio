@@ -2,8 +2,8 @@ import React from 'react';
 import {reel} from '../lib/data/Dance'
 import '../App.css'
 import Header from '../components/common/Header';
-import { isPhoto, MediaProps, Photo } from '../lib/interfaces';
-import ImageWithHover from '../components/common/ImageWithHover';
+import { isPhoto } from '../lib/interfaces';
+import './Pages.css'
 
 const Reel:React.FC=()=> {
     return (
@@ -12,10 +12,10 @@ const Reel:React.FC=()=> {
                 <div className="card blue-grey">
                     <div className="row">
                     {reel.map(prop=>
-                        <div className="col-xl-6 reelComponent">
+                        <div className="col-xl-6 reel-component">
                             {isPhoto(prop.media) ? 
-                            <img className="reelImage" src={prop.media.image}/>:
-                            <iframe className="reelVid" src={prop.media.link}/>
+                            <img className="reel-image" src={prop.media.image}/>:
+                            <iframe className="reel-vid" src={prop.media.link}/>
                             }
                         </div>
                     )}

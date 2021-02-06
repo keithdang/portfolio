@@ -18,7 +18,8 @@ export const oracle: Module.WorkCardProps = {
     start: new Date(2018, 10),
     end: new Date(),
     location: waterloo,
-    media: Oracle
+    media: Oracle,
+    styling: "image"
 }
 
 export const fixmestick: Module.WorkCardProps = {
@@ -32,7 +33,8 @@ export const fixmestick: Module.WorkCardProps = {
     start: new Date(2017, 5),
     end: new Date(2018, 4),
     location: montreal,
-    media: FixMeStick
+    media: FixMeStick,
+    styling: "image"
 }
 
 export const nokia: Module.WorkCardProps = {
@@ -46,7 +48,8 @@ export const nokia: Module.WorkCardProps = {
     start: new Date(2015, 4),
     end: new Date(2015, 7),
     location: kanata,
-    media: Nokia
+    media: Nokia,
+    styling: "image"
 }
 
 export const reflex: Module.WorkCardProps = {
@@ -59,6 +62,7 @@ export const reflex: Module.WorkCardProps = {
     start: new Date(2017, 5),
     end: new Date(2018, 4),
     location: montreal,
-    media: Reflex
+    media: Reflex,
+    styling: "reflex"
 }
 export const work: Module.WorkCardProps[] = [oracle, fixmestick, nokia, reflex];

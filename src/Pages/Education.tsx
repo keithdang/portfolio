@@ -6,6 +6,8 @@ import CurricularCard from '../components/education/CurricularCard';
 import Project from '../components/education/Project';
 import Header from '../components/common/Header';
 import McGill from '../lib/images/McGill_logo.png';
+import './Pages.css'
+
 const University:React.FC=()=> {
     return (
         <div className="container pagedisplay">

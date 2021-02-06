@@ -1,7 +1,8 @@
 import React from 'react';
 import {projects} from '../lib/data/Projects'
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../components/project/ProjectCard';
 import '../App.css'
+import './Pages.css'
 import Header from '../components/common/Header';
 
 const Projects:React.FC=()=> {
@@ -10,7 +11,7 @@ const Projects:React.FC=()=> {
             <Header obj={{title:"Projects"}}/>
             <div className="row">
             {projects.map(project=>
-                <div className="col-xl-6 projectCard">
+                <div className="col-xl-6 project-card">
                     <ProjectCard obj={project}/>
                 </div>
             )}

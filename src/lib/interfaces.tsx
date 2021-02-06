@@ -42,6 +42,7 @@ export interface WorkCardProps {
     end: Date
     location: string
     media?: string
+    styling?: string
 }
 
 export interface CurricularProps {

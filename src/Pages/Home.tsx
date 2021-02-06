@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/common/Header';
 import keith from '../lib/images/keith2.jpg'
 import mcgillkeith from '../lib/images/mcgillKeith.jpg'
+import './Pages.css'
 
 const Home:React.FC=()=> {
   return (

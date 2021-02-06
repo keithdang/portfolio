@@ -1,11 +1,12 @@
 import React from 'react';
-import { fromTo } from '../lib/dateMod';
-import {WorkCardProps} from '../lib/interfaces'
+import { fromTo } from '../../lib/dateMod';
+import {WorkCardProps} from '../../lib/interfaces'
+import './Work.css'
 
 const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
     const description = () => {
-        return <div className='workInfo card-body'>
-                    <ul className='cardList'>
+        return <div className='work-info card-body'>
+                    <ul className='work-list'>
                         {props.obj.description.map(info=>{
                             return <li>{info}</li>
                         })}
@@ -25,7 +26,7 @@ const WorkCard:React.FC<{ obj: WorkCardProps }> = (props) => {
                     <span>{props.obj.location}</span>
                 </div>
                 {props.obj.media && <div className="col-md-6 rightAlign"> 
-                    <img className={props.obj.company !== 'Reflex Photonics' ? "image": "reflex"} src={props.obj.media} />
+                    <img className={props.obj.styling} src={props.obj.media} />
                 </div>}
             </div>
         </div>

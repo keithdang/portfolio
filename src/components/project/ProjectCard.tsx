@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { fromTo, monthYear } from '../lib/dateMod';
-import {ButtonProps, isPhoto, ProjectCardProps} from '../lib/interfaces'
-import PanelButton from './PanelButton';
+import { fromTo, monthYear } from '../../lib/dateMod';
+import {ButtonProps, isPhoto, ProjectCardProps} from '../../lib/interfaces'
+import PanelButton from '../common/PanelButton';
+import './Project.css'
 
 const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
     enum ButtonStates {
@@ -46,8 +47,8 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
 
     const media = () => {
         return isPhoto(props.obj.media) ? 
-            <img className={props.obj.adjustImage ? props.obj.adjustImage : "projRectImage"} src={props.obj.media.image} /> :
-            <iframe className="projVid" src={props.obj.media.link} />
+            <img className={props.obj.adjustImage ? props.obj.adjustImage : "proj-rect-image"} src={props.obj.media.image} /> :
+            <iframe className="proj-vid" src={props.obj.media.link} />
             
     }
 
@@ -77,7 +78,7 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
             </div>
         </div>
         
-        <div className="card-body allProjInfo">
+        <div className="card-body all-proj-info">
             {displayState()}
         </div>
       </div>

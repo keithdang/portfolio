@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import {ButtonProps, DanceCardProps} from '../../lib/interfaces'
 import {monthYear} from '../../lib/dateMod'
-import PanelButton from '../PanelButton';
+import PanelButton from '../common/PanelButton';
+import './Dance.css'
 
 const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     enum ButtonStates {
@@ -28,7 +29,7 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
     }
 
     const placement = () => {
-        return <div className="danceInfo">
+        return <div className="dance-info">
             <div>
             {props.obj.placement && <h3>{props.obj.placement}</h3>}
             {props.obj.info && props.obj.info.length < 40 ? <h3>{props.obj.info}</h3> : <span>{props.obj.info}</span>}

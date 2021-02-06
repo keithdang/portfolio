@@ -15,7 +15,7 @@ export const mssd: Module.CurricularProps ={
     start: new Date(2016,8),
     end: new Date(2017,3),
     media: {image: mssdPhoto},
-    styling: 'squareImage'
+    styling: 'square-image'
 }
 
 export const eus: Module.CurricularProps ={
@@ -25,7 +25,7 @@ export const eus: Module.CurricularProps ={
     start: new Date(2013,8),
     end: new Date(2014,3),
     media: {image: eusPhoto},
-    styling: 'squareImage'
+    styling: 'square-image'
 }
 
 export const ewb: Module.CurricularProps ={
@@ -35,7 +35,7 @@ export const ewb: Module.CurricularProps ={
     start: new Date(2013,8),
     end: new Date(2014,3),
     media: {image: ewbPhoto},
-    styling: 'rectImage'
+    styling: 'rect-image'
 }
 
 export const curriculars: Module.CurricularProps[] = [mssd,eus,ewb];

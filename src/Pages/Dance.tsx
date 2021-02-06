@@ -5,7 +5,7 @@ import DanceCard from '../components/dance/DanceCard';
 import OtherDanceBattles from '../components/dance/OtherDanceBattles';
 import Testimonial from '../components/dance/Testimonial';
 import Header from '../components/common/Header';
-
+import './Pages.css'
 
 const Dance:React.FC=()=> {
     return (
@@ -14,7 +14,7 @@ const Dance:React.FC=()=> {
             <Header obj={competitions}/>
             <div className="row">
                 {events.map(event=>
-                    <div className="col-xl-4 col-md-6 danceCard">
+                    <div className="col-xl-4 col-md-6 dance-card">
                         <DanceCard obj={event}/>
                     </div>
                 )}

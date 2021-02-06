@@ -1,0 +1,9 @@
+.image-header {
+  width: 300px;
+}
+
+@media (max-width: 776px) {
+  .panel-button {
+    display: inline-grid;
+  }
+}

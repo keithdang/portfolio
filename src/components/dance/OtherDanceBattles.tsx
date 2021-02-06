@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {additionalEvents} from '../../lib/data/Dance'
 import { monthYear } from '../../lib/dateMod';
 import { DanceCardProps, ButtonProps } from '../../lib/interfaces';
-import PanelButton from '../PanelButton';
+import PanelButton from '../common/PanelButton';
 
 const OtherDanceBattles:React.FC = () => {
     enum ButtonStates {
