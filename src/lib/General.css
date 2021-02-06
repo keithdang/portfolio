@@ -1,0 +1,33 @@
+.background {
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+.largeFont {
+  font-size: large;
+}
+
+@media (min-width: 776px) {
+  .rightAlign {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.centerAlign {
+  display: flex;
+  justify-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.blue-grey {
+  background-color: #337ea7;
+  /* background-color: rosybrown; */
+}
+
+.blue-grey .card-header {
+  background-color: #2a6b8e;
+}

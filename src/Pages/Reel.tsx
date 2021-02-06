@@ -1,6 +1,5 @@
 import React from 'react';
 import {reel} from '../lib/data/Dance'
-import '../App.css'
 import Header from '../components/common/Header';
 import { isPhoto } from '../lib/interfaces';
 import './Pages.css'

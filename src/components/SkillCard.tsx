@@ -1,6 +1,5 @@
 import React from 'react';
 import { SkillProps} from '../lib/interfaces'
-import '../App.css'
 
 const SkillCard:React.FC<{ obj: SkillProps }> = (props) => {
     return (

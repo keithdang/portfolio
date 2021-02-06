@@ -1,7 +1,6 @@
 import React from 'react';
 import {curriculars} from '../lib/data/Curricular'
 import {projects} from '../lib/data/SchoolProjects'
-import '../App.css'
 import CurricularCard from '../components/education/CurricularCard';
 import Project from '../components/education/Project';
 import Header from '../components/common/Header';

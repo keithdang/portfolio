@@ -1,11 +1,11 @@
 import React from 'react';
 import {events, testimonials, competitions} from '../lib/data/Dance'
-import '../App.css'
 import DanceCard from '../components/dance/DanceCard';
 import OtherDanceBattles from '../components/dance/OtherDanceBattles';
 import Testimonial from '../components/dance/Testimonial';
 import Header from '../components/common/Header';
 import './Pages.css'
+import '../lib/General.css'
 
 const Dance:React.FC=()=> {
     return (

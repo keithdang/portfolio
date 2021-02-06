@@ -26,7 +26,7 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
         return <div>
             <span>{(props.obj.members && props.obj.members > 1) ? `Group Project- Members: ${props.obj.members}`: 'Independent'}</span><br/>
             <span>{props.obj.end ? fromTo(props.obj.start, props.obj.end): monthYear(props.obj.start)}</span>
-            <ul className='cardList'>
+            <ul className='proj-list'>
                 {props.obj.description.map(info=>{
                     return <li>{info}</li>
                 })}
@@ -37,7 +37,7 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
 
     const languages = () => {
         return <div>
-        {props.obj.stack && <ul className='cardList'>
+        {props.obj.stack && <ul className='proj-list'>
             {props.obj.stack.map(info=>{
                 return <li>{info}</li>
             })}

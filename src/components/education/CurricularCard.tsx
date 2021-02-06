@@ -1,6 +1,5 @@
 import React from 'react';
 import { CurricularProps} from '../../lib/interfaces'
-import '../../App.css'
 import { fromTo } from '../../lib/dateMod';
 import './Education.css'
 

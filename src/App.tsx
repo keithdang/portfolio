@@ -12,6 +12,7 @@ import Work from './pages/Work'
 import Education from './pages/Education'
 import Skills from './pages/Skills'
 import Reel from './pages/Reel';
+import './lib/General.css'
 
 const App:React.FC=()=> {
   return (

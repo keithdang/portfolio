@@ -1,7 +1,7 @@
 import React from 'react';
 import { isPhoto, SchoolProjectProps} from '../../lib/interfaces'
-import '../../App.css'
 import { fromTo, monthYear } from '../../lib/dateMod';
+import './Education.css'
 
 const Project:React.FC<{ obj: SchoolProjectProps }> = (props) => {
     return (

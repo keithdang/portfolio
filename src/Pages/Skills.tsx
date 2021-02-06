@@ -1,6 +1,5 @@
 import React from 'react';
 import {skillList} from '../lib/data/Skills'
-import '../App.css'
 import './Pages.css'
 import SkillCard from '../components/SkillCard';
 import Header from '../components/common/Header';

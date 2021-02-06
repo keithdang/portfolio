@@ -1,6 +1,6 @@
 import React from 'react';
 import {work} from '../lib/data/Work'
-import '../App.css'
+import '../lib/General.css'
 import WorkCard from '../components/work/WorkCard';
 import Header from '../components/common/Header';
 import './Pages.css'

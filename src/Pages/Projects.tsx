@@ -1,8 +1,6 @@
 import React from 'react';
 import {projects} from '../lib/data/Projects'
 import ProjectCard from '../components/project/ProjectCard';
-import '../App.css'
-import './Pages.css'
 import Header from '../components/common/Header';
 
 const Projects:React.FC=()=> {
