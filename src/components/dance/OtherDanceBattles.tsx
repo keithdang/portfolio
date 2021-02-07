@@ -43,7 +43,7 @@ const OtherDanceBattles:React.FC = () => {
                 <tr>
                     <th scope="col">Event</th>
                     <th scope="col">Placement</th>
-                    <th scope="col">{<PanelButton obj={buttonProp} thefunc={setColumnState}/>}</th>
+                    <th scope="col">{<PanelButton obj={buttonProp} thefunc={setColumnState} style={true}/>}</th>
                 </tr>
             </thead>
             <tbody>

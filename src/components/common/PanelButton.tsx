@@ -1,6 +1,6 @@
 import { ButtonProps } from "../../lib/interfaces"
 
-const PanelButton:React.FC<{ obj: ButtonProps[], thefunc(x:string): void }> = (props) => {
+const PanelButton:React.FC<{ obj: ButtonProps[], thefunc(x:string): void, style: boolean}> = (props) => {
     const buttonStyle = "btn button-color"
     const theButton = (item: ButtonProps) =>{
         if(item.hoverEnter && item.hoverLeave){
@@ -30,7 +30,7 @@ const PanelButton:React.FC<{ obj: ButtonProps[], thefunc(x:string): void }> = (p
         }
     }
 
-    return <div className="btn-group panel-button" role="group">
+    return <div className={props.style ? "btn-group panel-button":"btn-group"} role="group">
             {props.obj.map(item => {
                 return theButton(item)
             })}

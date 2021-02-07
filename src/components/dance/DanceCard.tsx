@@ -52,7 +52,7 @@ const DanceCard:React.FC<{ obj: DanceCardProps }> = (props) => {
             <div className="row dance-row-header">
                 <h4 className="col-sm-10">{props.obj.event}</h4>
                 <div className="col-sm-2 rightAlign">
-                    <PanelButton obj={buttonProp} thefunc={setCardState}/>
+                    <PanelButton obj={buttonProp} thefunc={setCardState} style={false}/>
                 </div>
             </div>
         </div>

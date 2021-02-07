@@ -73,7 +73,7 @@ const ProjectCard:React.FC<{ obj: ProjectCardProps }> = (props) => {
             }
                 
                 <div className="col-md-6 rightAlign">
-                    <PanelButton obj={buttonProp} thefunc={setCardState}/>
+                    <PanelButton obj={buttonProp} thefunc={setCardState} style={false}/>
                 </div>
             </div>
         </div>
