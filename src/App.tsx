@@ -12,32 +12,14 @@ import Work from './page/Work'
 import Education from './page/Education'
 import Skills from './page/Skills'
 import Reel from './page/Reel';
+import NavBar from './components/navigation/NavBar';
 import './lib/General.css'
 
 const App:React.FC=()=> {
   return (
     <div className="background">
       <Router>
-        <nav className="navbar navbar-expand-lg navbar-light header-color">
-          <Link className="navbar-brand" to="/">Keith</Link>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Dance</a>
-              <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item" to="/dance">Accomplishments</Link></li>
-                  <li><Link className="dropdown-item" to="/reel">Reel</Link></li>
-                </ul></li>
-              <li><Link className="nav-link" to="/work">Work</Link></li>
-              <li><Link className="nav-link" to="/education">Education</Link></li>
-              <li><Link className="nav-link" to="/skills">Skills</Link></li>
-              <li><Link className="nav-link" to="/projects">Projects</Link></li>
-            </ul>
-          </div>
-        </nav>
+        <NavBar/>
         <Switch>
           <Route path="/projects">
               <Projects/>

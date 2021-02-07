@@ -1,0 +1,43 @@
+@media (max-width: 776px) {
+  /* .navbar-nav {
+      height: 100vh !important;
+    } */
+  .icon-nav {
+    display: -webkit-inline-box;
+  }
+
+  #navbar-content {
+    /* height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-shrink: 0; */
+  }
+
+  #navbarNav {
+    /* position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-shrink: 0; */
+  }
+}
+
+.navbar {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contact-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+.contact-email {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
