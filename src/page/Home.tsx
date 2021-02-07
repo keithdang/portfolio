@@ -14,8 +14,7 @@ const Home:React.FC=()=> {
               <div>
                 <p>
                   Welcome to my website. My name is Keith Dang. I graduated from
-                  McGill Univeristy for my Bachelor's of Electrical Engineering
-                  and Software Developer at Oracle.
+                  McGill Univeristy for my Bachelor's of Electrical Engineering. Currently I am a Software Developer at Oracle.
                   <br />
                   Currently eager to explore the world of web development. I
                   also have a passion for dance. This site will give you all the fun
