@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.3452d3e0.chunk.css",
+    "main.js": "/portfolio/static/js/main.457028e0.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.457028e0.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.c3cfb48a.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.c3cfb48a.js.map",
+    "static/js/2.a7384b4a.chunk.js": "/portfolio/static/js/2.a7384b4a.chunk.js",
+    "static/js/2.a7384b4a.chunk.js.map": "/portfolio/static/js/2.a7384b4a.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.3452d3e0.chunk.css.map": "/portfolio/static/css/main.3452d3e0.chunk.css.map",
+    "static/js/2.a7384b4a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a7384b4a.chunk.js.LICENSE.txt",
+    "static/media/003-instagram.b79433a6.png": "/portfolio/static/media/003-instagram.b79433a6.png",
+    "static/media/005-github-logo.21dc3c16.png": "/portfolio/static/media/005-github-logo.21dc3c16.png",
+    "static/media/McGill_logo.ded59136.png": "/portfolio/static/media/McGill_logo.ded59136.png",
+    "static/media/dance1.fae90fd5.jpg": "/portfolio/static/media/dance1.fae90fd5.jpg",
+    "static/media/dance5.4b251007.jpg": "/portfolio/static/media/dance5.4b251007.jpg",
+    "static/media/dpmRobot.b6c1754d.jpg": "/portfolio/static/media/dpmRobot.b6c1754d.jpg",
+    "static/media/email.a3cff553.png": "/portfolio/static/media/email.a3cff553.png",
+    "static/media/eusjc.baa872aa.png": "/portfolio/static/media/eusjc.baa872aa.png",
+    "static/media/ewb.e306a6b8.jpeg": "/portfolio/static/media/ewb.e306a6b8.jpeg",
+    "static/media/keith2.455a3dbf.jpg": "/portfolio/static/media/keith2.455a3dbf.jpg",
+    "static/media/mcgillKeith.b2493694.jpg": "/portfolio/static/media/mcgillKeith.b2493694.jpg",
+    "static/media/mssd.82bdb29b.jpg": "/portfolio/static/media/mssd.82bdb29b.jpg",
+    "static/media/nokia.6d5c65d5.jpg": "/portfolio/static/media/nokia.6d5c65d5.jpg",
+    "static/media/pokemonReact.1ca8245c.png": "/portfolio/static/media/pokemonReact.1ca8245c.png",
+    "static/media/quizwiz.705f3b3b.png": "/portfolio/static/media/quizwiz.705f3b3b.png",
+    "static/media/time moves.368ca709.jpg": "/portfolio/static/media/time moves.368ca709.jpg",
+    "static/media/tournamentBracket2.5d27eedf.jpg": "/portfolio/static/media/tournamentBracket2.5d27eedf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3cfb48a.js",
+    "static/js/2.a7384b4a.chunk.js",
+    "static/css/main.3452d3e0.chunk.css",
+    "static/js/main.457028e0.chunk.js"
+  ]
+}
